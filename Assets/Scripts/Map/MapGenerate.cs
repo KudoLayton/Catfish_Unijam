@@ -10,9 +10,16 @@ public class MapGenerate : MonoBehaviour
     private GameObject liquidLimit;
 
 
-    // x, y : center align
-    public int Generate(double x, double y, double w, double h) {
+    
+    public void GenerateBlock(double x, double y, double w, double h)
+    {
+        
+        // 배치할 블럭 좌표계산
 
-        return 0;
+
+        // prefab instantiate, 배치
+
+
+        
     }
 }
