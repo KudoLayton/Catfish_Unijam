@@ -1,3 +1,8 @@
+/*
+ * Virtual Joystick 구현
+ * Canvas 밑에 Prefab을 넣어서 활용
+ * GetHorizontalValue()와 GetVerticalValue() 값을 통해 Joystick의 위치를 알 수 있음 (각각 -1 ~ 1, 원 밖에서 normalize)
+ */
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
