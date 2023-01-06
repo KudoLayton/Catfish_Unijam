@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 489c3e67a5f6eb74fa779aa5e0660d49
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: //RootNode
+    100006: Buffalo-cape
+    100008: Chest_M
+    100010: DeformationSystem
+    100012: Ear1_L
+    100014: Ear1_R
+    100016: Ear2_L
+    100018: Ear2_R
+    100020: Ear3_L
+    100022: Ear3_R
+    100024: Ear4_L
+    100026: Ear4_R
+    100028: Elbow_L
+    100030: Elbow_R
+    100032: Eye_L
+    100034: Eye_R
+    100036: EyeEnd_L
+    100038: EyeEnd_R
+    100040: Fingers1_L
+    100042: Fingers1_R
+    100044: Fingers2_L
+    100046: Fingers2_R
+    100048: Fingers3_L
+    100050: Fingers3_R
+    100052: Fingers4_L
+    100054: Fingers4_R
+    100056: Geometry
+    100058: Head_M
+    100060: HeadEnd_M
+    100062: Hip_L
+    100064: Hip_R
+    100066: Jaw_M
+    100068: JawEnd_M
+    100070: Knee_L
+    100072: Knee_R
+    100074: Main
+    100076: Neck1_M
+    100078: Neck_M
+    100080: Root_M
+    100082: Scapula_L
+    100084: Scapula_R
+    100086: Shoulder_L
+    100088: Shoulder_R
+    100090: Spine1_M
+    100092: Tail0_M
+    100094: Tail1_M
+    100096: Tail2_M
+    100098: Tail3_M
+    100100: Tail4_M
+    100102: Tail5_M
+    100104: Tail6_M
+    100106: Toes1_L
+    100108: Toes1_R
+    100110: Toes2_L
+    100112: Toes2_R
+    100114: Toes3_L
+    100116: Toes3_R
+    100118: Toes4_L
+    100120: Toes4_R
+    100122: Toung1_M
+    100124: Toung2_M
+    100126: Wrist_L
+    100128: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: //RootNode
+    400006: Buffalo-cape
+    400008: Chest_M
+    400010: DeformationSystem
+    400012: Ear1_L
+    400014: Ear1_R
+    400016: Ear2_L
+    400018: Ear2_R
+    400020: Ear3_L
+    400022: Ear3_R
+    400024: Ear4_L
+    400026: Ear4_R
+    400028: Elbow_L
+    400030: Elbow_R
+    400032: Eye_L
+    400034: Eye_R
+    400036: EyeEnd_L
+    400038: EyeEnd_R
+    400040: Fingers1_L
+    400042: Fingers1_R
+    400044: Fingers2_L
+    400046: Fingers2_R
+    400048: Fingers3_L
+    400050: Fingers3_R
+    400052: Fingers4_L
+    400054: Fingers4_R
+    400056: Geometry
+    400058: Head_M
+    400060: HeadEnd_M
+    400062: Hip_L
+    400064: Hip_R
+    400066: Jaw_M
+    400068: JawEnd_M
+    400070: Knee_L
+    400072: Knee_R
+    400074: Main
+    400076: Neck1_M
+    400078: Neck_M
+    400080: Root_M
+    400082: Scapula_L
+    400084: Scapula_R
+    400086: Shoulder_L
+    400088: Shoulder_R
+    400090: Spine1_M
+    400092: Tail0_M
+    400094: Tail1_M
+    400096: Tail2_M
+    400098: Tail3_M
+    400100: Tail4_M
+    400102: Tail5_M
+    400104: Tail6_M
+    400106: Toes1_L
+    400108: Toes1_R
+    400110: Toes2_L
+    400112: Toes2_R
+    400114: Toes3_L
+    400116: Toes3_R
+    400118: Toes4_L
+    400120: Toes4_R
+    400122: Toung1_M
+    400124: Toung2_M
+    400126: Wrist_L
+    400128: Wrist_R
+    2100000: Buffalo-cape1
+    4300000: Buffalo-cape
+    7400000: Buffalo_Idle Breathing
+    7400002: Buffalo_Idle Right
+    7400004: Buffalo_Idle Left
+    7400006: Buffalo_Idle to Walk
+    7400008: Buffalo_Walk
+    7400010: Buffalo_Walk to Idle
+    7400012: Buffalo_Idle to Run
+    7400014: Buffalo_Run
+    7400016: Buffalo_Run to Idle
+    7400018: Buffalo_Attack
+    7400020: Buffalo_Death
+    9500000: //RootNode
+    13700000: Buffalo-cape
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buffalo-cape1
+    second: {fileID: 2100000, guid: 6dc56fb7b38c5df44b8ac6390d24bcf9, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

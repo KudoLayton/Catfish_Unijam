@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: c23ef045507c41e4f9052b7a9473a970
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: DeformationSystem
+    100002: Eye_L
+    100004: Eye_R
+    100006: EyeEnd_L
+    100008: EyeEnd_R
+    100010: Geometry
+    100012: Head_M
+    100014: HeadEnd_M
+    100016: Headextra1_M
+    100018: Headextra2_M
+    100020: Headextra3_M
+    100022: Headextra4_M
+    100024: Main
+    100026: Neck_M
+    100028: Octopus
+    100030: //RootNode
+    100032: Root_M
+    100034: TentaclesFront_1_L
+    100036: TentaclesFront_1_R
+    100038: TentaclesFront_2_L
+    100040: TentaclesFront_2_R
+    100042: TentaclesFront_3_L
+    100044: TentaclesFront_3_R
+    100046: TentaclesFront_4_L
+    100048: TentaclesFront_4_R
+    100050: TentaclesFront_5_L
+    100052: TentaclesFront_5_R
+    100054: TentaclesFront_6_L
+    100056: TentaclesFront_6_R
+    100058: TentaclesRear_1_L
+    100060: TentaclesRear_1_R
+    100062: TentaclesRear_2_L
+    100064: TentaclesRear_2_R
+    100066: TentaclesRear_3_L
+    100068: TentaclesRear_3_R
+    100070: TentaclesRear_4_L
+    100072: TentaclesRear_4_R
+    100074: TentaclesRear_5_L
+    100076: TentaclesRear_5_R
+    100078: TentaclesRear_6_L
+    100080: TentaclesRear_6_R
+    100082: TentaclesSide1_1_L
+    100084: TentaclesSide1_1_R
+    100086: TentaclesSide1_2_L
+    100088: TentaclesSide1_2_R
+    100090: TentaclesSide1_3_L
+    100092: TentaclesSide1_3_R
+    100094: TentaclesSide1_4_L
+    100096: TentaclesSide1_4_R
+    100098: TentaclesSide1_5_L
+    100100: TentaclesSide1_5_R
+    100102: TentaclesSide1_6_L
+    100104: TentaclesSide1_6_R
+    100106: TentaclesSide2_1_L
+    100108: TentaclesSide2_1_R
+    100110: TentaclesSide2_2_L
+    100112: TentaclesSide2_2_R
+    100114: TentaclesSide2_3_L
+    100116: TentaclesSide2_3_R
+    100118: TentaclesSide2_4_L
+    100120: TentaclesSide2_4_R
+    100122: TentaclesSide2_5_L
+    100124: TentaclesSide2_5_R
+    100126: TentaclesSide2_6_L
+    100128: TentaclesSide2_6_R
+    400000: DeformationSystem
+    400002: Eye_L
+    400004: Eye_R
+    400006: EyeEnd_L
+    400008: EyeEnd_R
+    400010: Geometry
+    400012: Head_M
+    400014: HeadEnd_M
+    400016: Headextra1_M
+    400018: Headextra2_M
+    400020: Headextra3_M
+    400022: Headextra4_M
+    400024: Main
+    400026: Neck_M
+    400028: Octopus
+    400030: //RootNode
+    400032: Root_M
+    400034: TentaclesFront_1_L
+    400036: TentaclesFront_1_R
+    400038: TentaclesFront_2_L
+    400040: TentaclesFront_2_R
+    400042: TentaclesFront_3_L
+    400044: TentaclesFront_3_R
+    400046: TentaclesFront_4_L
+    400048: TentaclesFront_4_R
+    400050: TentaclesFront_5_L
+    400052: TentaclesFront_5_R
+    400054: TentaclesFront_6_L
+    400056: TentaclesFront_6_R
+    400058: TentaclesRear_1_L
+    400060: TentaclesRear_1_R
+    400062: TentaclesRear_2_L
+    400064: TentaclesRear_2_R
+    400066: TentaclesRear_3_L
+    400068: TentaclesRear_3_R
+    400070: TentaclesRear_4_L
+    400072: TentaclesRear_4_R
+    400074: TentaclesRear_5_L
+    400076: TentaclesRear_5_R
+    400078: TentaclesRear_6_L
+    400080: TentaclesRear_6_R
+    400082: TentaclesSide1_1_L
+    400084: TentaclesSide1_1_R
+    400086: TentaclesSide1_2_L
+    400088: TentaclesSide1_2_R
+    400090: TentaclesSide1_3_L
+    400092: TentaclesSide1_3_R
+    400094: TentaclesSide1_4_L
+    400096: TentaclesSide1_4_R
+    400098: TentaclesSide1_5_L
+    400100: TentaclesSide1_5_R
+    400102: TentaclesSide1_6_L
+    400104: TentaclesSide1_6_R
+    400106: TentaclesSide2_1_L
+    400108: TentaclesSide2_1_R
+    400110: TentaclesSide2_2_L
+    400112: TentaclesSide2_2_R
+    400114: TentaclesSide2_3_L
+    400116: TentaclesSide2_3_R
+    400118: TentaclesSide2_4_L
+    400120: TentaclesSide2_4_R
+    400122: TentaclesSide2_5_L
+    400124: TentaclesSide2_5_R
+    400126: TentaclesSide2_6_L
+    400128: TentaclesSide2_6_R
+    2100000: Octopus
+    4300000: Octopus
+    7400000: Octopus_Idle
+    7400002: Octopus_Idle to Swim
+    7400004: Octopus_Swim
+    7400006: Octopus_Swim to Idle
+    7400008: Octopus_Attack
+    7400010: Octopus_Death
+    9500000: //RootNode
+    13700000: Octopus
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Octopus_Idle
+      takeName: Octopus_Idle
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Octopus_Idle to Swim
+      takeName: Octopus_Idle to Swim
+      firstFrame: 120
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Octopus_Swim
+      takeName: Octopus_Swim
+      firstFrame: 190
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 190
+    - serializedVersion: 16
+      name: Octopus_Swim to Idle
+      takeName: Octopus_Swim to Idle
+      firstFrame: 310
+      lastFrame: 345
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Octopus_Attack
+      takeName: Octopus_Attack
+      firstFrame: 400
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 400
+    - serializedVersion: 16
+      name: Octopus_Death
+      takeName: Octopus_Death
+      firstFrame: 500
+      lastFrame: 548
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,734 @@
+fileFormatVersion: 2
+guid: 1700a19c2b2fc76428a72c136337ce27
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: Back_Toe_1_L
+    100006: Back_Toe_1_R
+    100008: Back_Toe_2_L
+    100010: Back_Toe_2_R
+    100012: Back_Toe_L
+    100014: Back_Toe_R
+    100016: Chest_M
+    100018: DeformationSystem
+    100020: Elbow_L
+    100022: Elbow_R
+    100024: Eye_L
+    100026: Eye_R
+    100028: EyeEnd_L
+    100030: EyeEnd_R
+    100032: Geometry
+    100034: Head_M
+    100036: Hip_L
+    100038: Hip_R
+    100040: Inner_Toe_1_L
+    100042: Inner_Toe_1_R
+    100044: Inner_Toe_2_L
+    100046: Inner_Toe_2_R
+    100048: Inner_Toe_L
+    100050: Inner_Toe_R
+    100052: Jaw_M
+    100054: JawEnd_M
+    100056: joint4_L
+    100058: joint4_R
+    100060: Knee_L
+    100062: Knee_R
+    100064: Main
+    100066: Middle_Toe_1_L
+    100068: Middle_Toe_1_R
+    100070: Middle_Toe_2_L
+    100072: Middle_Toe_2_R
+    100074: Middle_Toe_3_L
+    100076: Middle_Toe_3_R
+    100078: Middle_Toe_L
+    100080: Middle_Toe_R
+    100082: Neck_M
+    100084: Outer_Toe_1_L
+    100086: Outer_Toe_1_R
+    100088: Outer_Toe_2_L
+    100090: Outer_Toe_2_R
+    100092: Outer_Toe_3_L
+    100094: Outer_Toe_3_R
+    100096: Outer_Toe_L
+    100098: Outer_Toe_R
+    100100: Roaster
+    100102: //RootNode
+    100104: Root_M
+    100106: Scapula_L
+    100108: Scapula_R
+    100110: Shoulder_L
+    100112: Shoulder_R
+    100114: Spine1_M
+    100116: Tail1_M
+    100118: Tail2_M
+    100120: Tail3_M
+    100122: Tail3ASide_L
+    100124: Tail3ASide_R
+    100126: Tail3Side_L
+    100128: Tail3Side_R
+    100130: Tail3SideEnd_L
+    100132: Tail3SideEnd_R
+    100134: Tail4_M
+    100136: Tail5_M
+    100138: Toes_L
+    100140: Toes_R
+    100142: ToesEnd_L
+    100144: ToesEnd_R
+    100146: Wattle1_M
+    100148: Wattle2_M
+    100150: Wattle3_M
+    100152: Wing_10_L
+    100154: Wing_10_R
+    100156: Wing_11_L
+    100158: Wing_11_R
+    100160: Wing_12_L
+    100162: Wing_12_R
+    100164: Wing_1_L
+    100166: Wing_1_R
+    100168: Wing_2_L
+    100170: Wing_2_R
+    100172: Wing_3_L
+    100174: Wing_3_R
+    100176: Wing_4_L
+    100178: Wing_4_R
+    100180: Wing_5_L
+    100182: Wing_5_R
+    100184: Wing_6_L
+    100186: Wing_6_R
+    100188: Wing_7_L
+    100190: Wing_7_R
+    100192: Wing_8_L
+    100194: Wing_8_R
+    100196: Wing_9_L
+    100198: Wing_9_R
+    100200: Wrist_L
+    100202: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: Back_Toe_1_L
+    400006: Back_Toe_1_R
+    400008: Back_Toe_2_L
+    400010: Back_Toe_2_R
+    400012: Back_Toe_L
+    400014: Back_Toe_R
+    400016: Chest_M
+    400018: DeformationSystem
+    400020: Elbow_L
+    400022: Elbow_R
+    400024: Eye_L
+    400026: Eye_R
+    400028: EyeEnd_L
+    400030: EyeEnd_R
+    400032: Geometry
+    400034: Head_M
+    400036: Hip_L
+    400038: Hip_R
+    400040: Inner_Toe_1_L
+    400042: Inner_Toe_1_R
+    400044: Inner_Toe_2_L
+    400046: Inner_Toe_2_R
+    400048: Inner_Toe_L
+    400050: Inner_Toe_R
+    400052: Jaw_M
+    400054: JawEnd_M
+    400056: joint4_L
+    400058: joint4_R
+    400060: Knee_L
+    400062: Knee_R
+    400064: Main
+    400066: Middle_Toe_1_L
+    400068: Middle_Toe_1_R
+    400070: Middle_Toe_2_L
+    400072: Middle_Toe_2_R
+    400074: Middle_Toe_3_L
+    400076: Middle_Toe_3_R
+    400078: Middle_Toe_L
+    400080: Middle_Toe_R
+    400082: Neck_M
+    400084: Outer_Toe_1_L
+    400086: Outer_Toe_1_R
+    400088: Outer_Toe_2_L
+    400090: Outer_Toe_2_R
+    400092: Outer_Toe_3_L
+    400094: Outer_Toe_3_R
+    400096: Outer_Toe_L
+    400098: Outer_Toe_R
+    400100: Roaster
+    400102: //RootNode
+    400104: Root_M
+    400106: Scapula_L
+    400108: Scapula_R
+    400110: Shoulder_L
+    400112: Shoulder_R
+    400114: Spine1_M
+    400116: Tail1_M
+    400118: Tail2_M
+    400120: Tail3_M
+    400122: Tail3ASide_L
+    400124: Tail3ASide_R
+    400126: Tail3Side_L
+    400128: Tail3Side_R
+    400130: Tail3SideEnd_L
+    400132: Tail3SideEnd_R
+    400134: Tail4_M
+    400136: Tail5_M
+    400138: Toes_L
+    400140: Toes_R
+    400142: ToesEnd_L
+    400144: ToesEnd_R
+    400146: Wattle1_M
+    400148: Wattle2_M
+    400150: Wattle3_M
+    400152: Wing_10_L
+    400154: Wing_10_R
+    400156: Wing_11_L
+    400158: Wing_11_R
+    400160: Wing_12_L
+    400162: Wing_12_R
+    400164: Wing_1_L
+    400166: Wing_1_R
+    400168: Wing_2_L
+    400170: Wing_2_R
+    400172: Wing_3_L
+    400174: Wing_3_R
+    400176: Wing_4_L
+    400178: Wing_4_R
+    400180: Wing_5_L
+    400182: Wing_5_R
+    400184: Wing_6_L
+    400186: Wing_6_R
+    400188: Wing_7_L
+    400190: Wing_7_R
+    400192: Wing_8_L
+    400194: Wing_8_R
+    400196: Wing_9_L
+    400198: Wing_9_R
+    400200: Wrist_L
+    400202: Wrist_R
+    2100000: roaster
+    4300000: Roaster
+    7400000: Roaster_idle breathing
+    7400002: Roaster_idle roast
+    7400004: Roaster_idle2
+    7400006: Roaster_idle3
+    7400008: Roaster_idle to walk
+    7400010: Roaster_walk
+    7400012: Roaster_walk to idle
+    7400014: Roaster_idle to run
+    7400016: Roaster_run
+    7400018: Roaster_run to idle
+    7400020: Roaster_idle to fly
+    7400022: Roaster_fly
+    7400024: Roaster_fly to idle
+    7400026: Roaster_attack
+    7400028: Roaster_death
+    9500000: //RootNode
+    13700000: Roaster
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Roaster_idle breathing
+      takeName: Roaster_idle breathing
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_idle roast
+      takeName: Roaster_idle roast
+      firstFrame: 100
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Roaster_idle2
+      takeName: Roaster_idle2
+      firstFrame: 180
+      lastFrame: 288
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 180
+    - serializedVersion: 16
+      name: Roaster_idle3
+      takeName: Roaster_idle3
+      firstFrame: 330
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 330
+    - serializedVersion: 16
+      name: Roaster_idle to walk
+      takeName: Roaster_idle to walk
+      firstFrame: 390
+      lastFrame: 405
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_walk
+      takeName: Roaster_walk
+      firstFrame: 430
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 430
+    - serializedVersion: 16
+      name: Roaster_walk to idle
+      takeName: Roaster_walk to idle
+      firstFrame: 480
+      lastFrame: 495
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_idle to run
+      takeName: Roaster_idle to run
+      firstFrame: 530
+      lastFrame: 538
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_run
+      takeName: Roaster_run
+      firstFrame: 570
+      lastFrame: 586
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 570
+    - serializedVersion: 16
+      name: Roaster_run to idle
+      takeName: Roaster_run to idle
+      firstFrame: 600
+      lastFrame: 611
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_idle to fly
+      takeName: Roaster_idle to fly
+      firstFrame: 640
+      lastFrame: 650
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_fly
+      takeName: Roaster_fly
+      firstFrame: 670
+      lastFrame: 690
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 670
+    - serializedVersion: 16
+      name: Roaster_fly to idle
+      takeName: Roaster_fly to idle
+      firstFrame: 715
+      lastFrame: 725
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roaster_attack
+      takeName: Roaster_attack
+      firstFrame: 770
+      lastFrame: 806
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 770
+    - serializedVersion: 16
+      name: Roaster_death
+      takeName: Roaster_death
+      firstFrame: 840
+      lastFrame: 866
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

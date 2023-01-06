@@ -1,0 +1,809 @@
+fileFormatVersion: 2
+guid: a20d1810ecaa6274993d9f0271bf3d17
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: Back_Toe_1_L
+    100006: Back_Toe_1_R
+    100008: Back_Toe_2_L
+    100010: Back_Toe_2_R
+    100012: Back_Toe_L
+    100014: Back_Toe_R
+    100016: Chest_M
+    100018: DeformationSystem
+    100020: Elbow_L
+    100022: Elbow_R
+    100024: Eye_L
+    100026: Eye_R
+    100028: EyeEnd_L
+    100030: EyeEnd_R
+    100032: Geometry
+    100034: Head_M
+    100036: Hen
+    100038: //RootNode
+    100040: Hip_L
+    100042: Hip_R
+    100044: Inner_Toe_1_L
+    100046: Inner_Toe_1_R
+    100048: Inner_Toe_2_L
+    100050: Inner_Toe_2_R
+    100052: Inner_Toe_L
+    100054: Inner_Toe_R
+    100056: Jaw_M
+    100058: JawEnd_M
+    100060: joint4_L
+    100062: joint4_R
+    100064: Knee_L
+    100066: Knee_R
+    100068: Middle_Toe_1_L
+    100070: Middle_Toe_1_R
+    100072: Middle_Toe_2_L
+    100074: Middle_Toe_2_R
+    100076: Middle_Toe_3_L
+    100078: Middle_Toe_3_R
+    100080: Middle_Toe_L
+    100082: Middle_Toe_R
+    100084: Neck_M
+    100086: Outer_Toe_1_L
+    100088: Outer_Toe_1_R
+    100090: Outer_Toe_2_L
+    100092: Outer_Toe_2_R
+    100094: Outer_Toe_3_L
+    100096: Outer_Toe_3_R
+    100098: Outer_Toe_L
+    100100: Outer_Toe_R
+    100102: Root_M
+    100104: Scapula_L
+    100106: Scapula_R
+    100108: Shoulder_L
+    100110: Shoulder_R
+    100112: Spine1_M
+    100114: Tail1_M
+    100116: Tail2_M
+    100118: Tail3_M
+    100120: Tail3ASide_L
+    100122: Tail3ASide_R
+    100124: Tail3Side_L
+    100126: Tail3Side_R
+    100128: Tail3SideEnd_L
+    100130: Tail3SideEnd_R
+    100132: Toes_L
+    100134: Toes_R
+    100136: ToesEnd_L
+    100138: ToesEnd_R
+    100140: Wing_10_L
+    100142: Wing_10_R
+    100144: Wing_11_L
+    100146: Wing_11_R
+    100148: Wing_12_L
+    100150: Wing_12_R
+    100152: Wing_1_L
+    100154: Wing_1_R
+    100156: Wing_2_L
+    100158: Wing_2_R
+    100160: Wing_3_L
+    100162: Wing_3_R
+    100164: Wing_4_L
+    100166: Wing_4_R
+    100168: Wing_5_L
+    100170: Wing_5_R
+    100172: Wing_6_L
+    100174: Wing_6_R
+    100176: Wing_7_L
+    100178: Wing_7_R
+    100180: Wing_8_L
+    100182: Wing_8_R
+    100184: Wing_9_L
+    100186: Wing_9_R
+    100188: Wrist_L
+    100190: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: Back_Toe_1_L
+    400006: Back_Toe_1_R
+    400008: Back_Toe_2_L
+    400010: Back_Toe_2_R
+    400012: Back_Toe_L
+    400014: Back_Toe_R
+    400016: Chest_M
+    400018: DeformationSystem
+    400020: Elbow_L
+    400022: Elbow_R
+    400024: Eye_L
+    400026: Eye_R
+    400028: EyeEnd_L
+    400030: EyeEnd_R
+    400032: Geometry
+    400034: Head_M
+    400036: Hen
+    400038: //RootNode
+    400040: Hip_L
+    400042: Hip_R
+    400044: Inner_Toe_1_L
+    400046: Inner_Toe_1_R
+    400048: Inner_Toe_2_L
+    400050: Inner_Toe_2_R
+    400052: Inner_Toe_L
+    400054: Inner_Toe_R
+    400056: Jaw_M
+    400058: JawEnd_M
+    400060: joint4_L
+    400062: joint4_R
+    400064: Knee_L
+    400066: Knee_R
+    400068: Middle_Toe_1_L
+    400070: Middle_Toe_1_R
+    400072: Middle_Toe_2_L
+    400074: Middle_Toe_2_R
+    400076: Middle_Toe_3_L
+    400078: Middle_Toe_3_R
+    400080: Middle_Toe_L
+    400082: Middle_Toe_R
+    400084: Neck_M
+    400086: Outer_Toe_1_L
+    400088: Outer_Toe_1_R
+    400090: Outer_Toe_2_L
+    400092: Outer_Toe_2_R
+    400094: Outer_Toe_3_L
+    400096: Outer_Toe_3_R
+    400098: Outer_Toe_L
+    400100: Outer_Toe_R
+    400102: Root_M
+    400104: Scapula_L
+    400106: Scapula_R
+    400108: Shoulder_L
+    400110: Shoulder_R
+    400112: Spine1_M
+    400114: Tail1_M
+    400116: Tail2_M
+    400118: Tail3_M
+    400120: Tail3ASide_L
+    400122: Tail3ASide_R
+    400124: Tail3Side_L
+    400126: Tail3Side_R
+    400128: Tail3SideEnd_L
+    400130: Tail3SideEnd_R
+    400132: Toes_L
+    400134: Toes_R
+    400136: ToesEnd_L
+    400138: ToesEnd_R
+    400140: Wing_10_L
+    400142: Wing_10_R
+    400144: Wing_11_L
+    400146: Wing_11_R
+    400148: Wing_12_L
+    400150: Wing_12_R
+    400152: Wing_1_L
+    400154: Wing_1_R
+    400156: Wing_2_L
+    400158: Wing_2_R
+    400160: Wing_3_L
+    400162: Wing_3_R
+    400164: Wing_4_L
+    400166: Wing_4_R
+    400168: Wing_5_L
+    400170: Wing_5_R
+    400172: Wing_6_L
+    400174: Wing_6_R
+    400176: Wing_7_L
+    400178: Wing_7_R
+    400180: Wing_8_L
+    400182: Wing_8_R
+    400184: Wing_9_L
+    400186: Wing_9_R
+    400188: Wrist_L
+    400190: Wrist_R
+    2100000: Hen
+    4300000: Hen
+    7400000: Hen_Idle breath
+    7400002: Hen_Idle roast
+    7400004: Hen_Idle2
+    7400006: Hen_Idle3
+    7400008: Hen_Idle to slow walk
+    7400010: Hen_Slow walk
+    7400012: Hen_Slow walk to idle
+    7400014: Hen_Idle to run
+    7400016: Hen_Run
+    7400018: Hen_Run to idle
+    7400020: Hen_Idle to fly
+    7400022: Hen_Flying
+    7400024: Hen_Fly to idle
+    7400026: Hen_Idle to walk
+    7400028: Hen_Walk
+    7400030: Hen_Walk to idle
+    7400032: Hen_Attack
+    7400034: Hen_Death
+    9500000: //RootNode
+    13700000: Hen
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Hen_Idle breath
+      takeName: Hen_Idle breath
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Idle roast
+      takeName: Hen_Idle roast
+      firstFrame: 100
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 100
+    - serializedVersion: 16
+      name: Hen_Idle2
+      takeName: Hen_Idle2
+      firstFrame: 180
+      lastFrame: 288
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 180
+    - serializedVersion: 16
+      name: Hen_Idle3
+      takeName: Hen_Idle3
+      firstFrame: 330
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 330
+    - serializedVersion: 16
+      name: Hen_Idle to slow walk
+      takeName: Hen_Idle to slow walk
+      firstFrame: 380
+      lastFrame: 395
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Slow walk
+      takeName: Hen_Slow walk
+      firstFrame: 420
+      lastFrame: 468
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 420
+    - serializedVersion: 16
+      name: Hen_Slow walk to idle
+      takeName: Hen_Slow walk to idle
+      firstFrame: 490
+      lastFrame: 505
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Idle to run
+      takeName: Hen_Idle to run
+      firstFrame: 530
+      lastFrame: 538
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Run
+      takeName: Hen_Run
+      firstFrame: 570
+      lastFrame: 586
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 570
+    - serializedVersion: 16
+      name: Hen_Run to idle
+      takeName: Hen_Run to idle
+      firstFrame: 600
+      lastFrame: 611
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Idle to fly
+      takeName: Hen_Idle to fly
+      firstFrame: 640
+      lastFrame: 650
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Flying
+      takeName: Hen_Flying
+      firstFrame: 670
+      lastFrame: 690
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 670
+    - serializedVersion: 16
+      name: Hen_Fly to idle
+      takeName: Hen_Fly to idle
+      firstFrame: 715
+      lastFrame: 725
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Idle to walk
+      takeName: Hen_Idle to walk
+      firstFrame: 750
+      lastFrame: 765
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Walk
+      takeName: Hen_Walk
+      firstFrame: 790
+      lastFrame: 820
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 790
+    - serializedVersion: 16
+      name: Hen_Walk to idle
+      takeName: Hen_Walk to idle
+      firstFrame: 840
+      lastFrame: 855
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hen_Attack
+      takeName: Hen_Attack
+      firstFrame: 900
+      lastFrame: 936
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 900
+    - serializedVersion: 16
+      name: Hen_Death
+      takeName: Hen_Death
+      firstFrame: 970
+      lastFrame: 996
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

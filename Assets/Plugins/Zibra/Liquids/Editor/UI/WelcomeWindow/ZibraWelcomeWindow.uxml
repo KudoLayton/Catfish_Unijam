@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement class="root" style="width: 100%; height: 100%;">
+        <ui:VisualElement class="Header">
+            <ui:Label text="Welcome to Zibra Liquids" />
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: center;">
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="image image-preview-paid paid-only" />
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="image image-preview-free free-only" />
+        </ui:VisualElement>
+        <ui:VisualElement class="Main">
+            <ui:Button tabindex="-1" name="Info" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-docs" />
+                <ui:Label text="Registration and Plugin Info" class="paid-only" />
+                <ui:Label text="Plugin Info" class="free-only" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="OnePager" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-docs" />
+                <ui:Label text="Plugin description" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="Discord" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-discord" />
+                <ui:Label text="Discord" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="E-Mail" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-email" />
+                <ui:Label text="Support E-Mail" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="User Guide" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-docs" />
+                <ui:Label text="User Guide" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="API Reference" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-docs" />
+                <ui:Label text="API Reference" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="Changelog" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-docs" />
+                <ui:Label text="Changelog" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="Tutorials" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-youtube" />
+                <ui:Label text="Tutorials" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="TutorialScenes" class="hyperlink" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-download" />
+                <ui:Label text="Tutorial Scenes" />
+            </ui:Button>
+            <ui:Button tabindex="-1" name="FullVersion" class="hyperlink free-only" style="height: 25px; font-size: 16px;">
+                <ui:Label tabindex="-1" display-tooltip-when-elided="true" class="icon icon-paid-version" />
+                <ui:Label text="Full Version" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

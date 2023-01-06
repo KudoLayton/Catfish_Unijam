@@ -1,0 +1,83 @@
+.root {
+    background-color: rgb(0, 0, 0);
+}
+
+.Header {
+    font-size: 30px;
+    height: 42px;
+    -unity-text-align: middle-center;
+}
+
+.Main {
+    height: 42px;
+    padding-left: 12px;
+}
+
+.hyperlink {
+    background-color: initial;
+    border-width: 0;
+    margin: 0;
+    width: auto;
+    flex-shrink: 0;
+    flex-direction: row;
+    margin-top: 2px;
+}
+
+.hyperlink:hover Label {
+    -unity-background-image-tint-color: cornflowerblue;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    cursor: link;
+}
+
+.hyperlink:hover VisualElement {
+    -unity-background-image-tint-color: cornflowerblue;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    cursor: link;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    margin-right: 3px;
+}
+
+.icon-discord {
+    background-image: url('Icons/discord.png?fileID=2800000&guid=fb1cdc294f3cee041845a0878f8139f1&type=3#discord');
+}
+
+.icon-youtube {
+    background-image: url('Icons/youtube.png?fileID=2800000&guid=d76b96c49327fe44da5e93da076ac37f&type=3#youtube');
+}
+
+.icon-email {
+    background-image: url('Icons/email.png?fileID=2800000&guid=87fd059b5dac8ef4d8c37b9a906a52a5&type=3#email');
+}
+
+.icon-docs {
+    background-image: url('Icons/document.png?fileID=2800000&guid=650867754d7db9b429b1a56e468dba4a&type=3#document');
+}
+
+.icon-hyperlink {
+    background-image: url('Icons/website.png?fileID=2800000&guid=49a914e428282d5499df5b3d67c9e6c1&type=3#website');
+}
+
+.icon-download {
+    background-image: url('Icons/download.png?fileID=2800000&guid=fcdf89a9c0fbf6d48b0da03dacc0c59e&type=3#download');
+}
+
+.image {
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+}
+
+.image-preview-paid {
+    background-image: url('Icons/preview-paid.png?fileID=2800000&guid=46df20f03af28844aa99a662235a93d8&type=3#preview-paid');
+}
+
+.image-preview-free {
+    background-image: url('Icons/preview-free.png?fileID=2800000&guid=13e4c7c84c89da34590eb28f176f137c&type=3#preview-free');
+}
