@@ -1,3 +1,7 @@
+/*
+ * 자이로센서로부터 "아래" 방향을 구하는 컴포넌트
+ * 아무데나 달아놓고, 필요할 때마다 GetAngle() 함수를 호출하여 아래 방향을 얻는다
+ */
 using UnityEngine;
 
 public class Gyro : MonoBehaviour
@@ -20,6 +24,10 @@ public class Gyro : MonoBehaviour
         }
     }
 
+    /**
+     * 기기의 자이로센서와 동기화된 "아래" 방향을 구한다
+     * @return 아래 방향의 각도
+     */
     public float GetAngle()
     {
         return _angle;
