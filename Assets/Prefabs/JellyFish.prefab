@@ -934,9 +934,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8188327902327934352}
   - component: {fileID: 8142479927456005874}
-  - component: {fileID: 8093171405136269712}
-  - component: {fileID: 8294014710129456040}
-  - component: {fileID: 8086579504567239056}
+  - component: {fileID: 788936954}
+  - component: {fileID: 788936955}
   m_Layer: 0
   m_Name: JellyFish
   m_TagString: Untagged
@@ -953,8 +952,8 @@ Transform:
   m_GameObject: {fileID: 8190051076175475462}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0.92, z: -7.17}
-  m_LocalScale: {x: 4, y: 1, z: 4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 0.5, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8195543118001645320}
   - {fileID: 8188284822450617928}
@@ -963,7 +962,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!95 &8142479927456005874
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -980,48 +979,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!143 &8093171405136269712
-CharacterController:
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!135 &788936954
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8190051076175475462}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.2
-  m_Radius: 0.3
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.09, z: 0}
---- !u!195 &8294014710129456040
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8190051076175475462}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1.98
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &8086579504567239056
+  m_Radius: 0.28
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &788936955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1030,50 +1002,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8190051076175475462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36003be02bd7fc54db18675085e2ab6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d481ee398584eb6a89b68419f183284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleStates:
-  - stateName: Idle
-    animationBool: isIdle
-    minStateTime: 1
-    maxStateTime: 45
-    stateWeight: 2
-  movementStates:
-  - stateName: Idle
-    animationBool: isIdle
-    maxStateTime: 1
-    moveSpeed: 0.1
-    turnSpeed: 20
-  attackingStates: []
-  deathStates: []
-  species: JellyFish
-  stats: {fileID: 11400000, guid: b09e3a7c9fdd34a428dbc19dd3a3aa86, type: 2}
-  wanderZone: 10
-  awareness: 30
-  scent: 30
-  constainedToWanderZone: 0
-  nonAgressiveTowards: []
-  matchSurfaceRotation: 0
-  surfaceRotationSpeed: 2
-  logChanges: 0
-  showGizmos: 0
-  drawWanderRange: 1
-  drawScentRange: 1
-  drawAwarenessRange: 1
-  deathEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  attackingEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  idleEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  movementEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  CurrentState: 0
+  delay: 1.5
 --- !u!1 &8190055179443710398
 GameObject:
   m_ObjectHideFlags: 0
