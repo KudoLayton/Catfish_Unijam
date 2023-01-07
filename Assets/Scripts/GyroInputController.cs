@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class GyroInputController : MonoBehaviour
 {
@@ -34,7 +33,7 @@ public class GyroInputController : MonoBehaviour
         var gravity = Input.gyro.gravity;
 
         var direction = new Vector2(gravity.x, gravity.y);
-        if (direction.magnitude > MinimumTilt)
+        if (direction.magnitude > minimumTilt)
         {
             _angle = -Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
         }
