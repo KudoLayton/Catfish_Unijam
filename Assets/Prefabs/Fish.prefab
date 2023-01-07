@@ -631,10 +631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4110e6cbf1a4c43b5aed9b08dabc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 2
+  moveSpeed: 3
   waterDrag: 5
-  jumpForce: 20
-  maxSpeed: 3
+  jumpSpeed: 10
   onEnterWater:
     m_PersistentCalls:
       m_Calls: []
@@ -654,4 +653,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  useTestInput: 1
