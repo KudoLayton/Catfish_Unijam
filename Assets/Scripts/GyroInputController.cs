@@ -16,7 +16,7 @@ public class GyroInputController : MonoBehaviour
     void Update()
     {
         UpdateAngle();
-        var angleDiff = _angle - _prevAngle;
+        var angleDiff = -(_angle - _prevAngle);
         if (angleDiff > 180) angleDiff -= 360;
         if (angleDiff < -180) angleDiff += 360;
         transform.Rotate(Vector3.right, angleDiff);
