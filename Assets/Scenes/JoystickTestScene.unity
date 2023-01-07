@@ -535,6 +535,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 813999122557497635, guid: 37d7ad052c1e54d1cbef6cdf54342dad, type: 3}
   m_PrefabInstance: {fileID: 813999122911842294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &701086445755798032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2856801828023533694, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+  m_PrefabInstance: {fileID: 3323555679252910702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701086445755798035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701086445755798032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9acd03a746f9a4c0ea8ca674ea9c12e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 1910780562}
 --- !u!1001 &813999122911842294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -639,10 +657,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 701086445755798033, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 701086445755798034, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1910780562}
+    - target: {fileID: 701086445755798034, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+      propertyPath: jumpForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 701086445755798034, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+      propertyPath: waterDrag
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2807080022226907606, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0

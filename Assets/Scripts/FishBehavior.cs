@@ -2,44 +2,63 @@ using UnityEngine;
 
 public class FishBehavior : MonoBehaviour
 {
-    [SerializeField] private GameObject joystick;
     [SerializeField] private float maxForce;
-    private JoystickController _joystickController;
+    [SerializeField] private float waterDrag;
+    [SerializeField] private float jumpForce;
     private Rigidbody _rigidbody;
     private const float EPSILON = 0.01f;
+    private bool _prevInWater;
 
     void Start()
     {
-        _joystickController = joystick.GetComponent<JoystickController>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        if (IsInWater())
-            MoveInWater();
-        else
-            MoveInAir();
+        bool currInWater = IsInWater();
+
+        if (_prevInWater && !currInWater) StartInAir();
+        else if (!_prevInWater && currInWater) StartInWater();
+        
+        Rotate();
+        
+        _prevInWater = currInWater;
+    }
+    
+    public void Move(Vector3 direction)
+    {
+        if (IsInWater()) _rigidbody.AddForce(direction * maxForce);
+    }
+
+    public void Jump()
+    {
+        _rigidbody.AddForce(0, jumpForce, 0);
     }
 
     private bool IsInWater()
     {
         // TODO
-        return true;
+        return transform.position.y < 0;
     }
 
-    private void MoveInWater()
+    private void StartInAir()
+    {
+        _rigidbody.useGravity = true;
+        _rigidbody.drag = 0;
+    }
+
+    private void StartInWater()
     {
         _rigidbody.useGravity = false;
-        Vector3 force = new Vector3(_joystickController.Horizontal, _joystickController.Vertical, 0) * maxForce;
-        _rigidbody.AddForce(force);
+        _rigidbody.drag = waterDrag;
+    }
+
+    private void Rotate()
+    {
         var velocity = _rigidbody.velocity;
         if (velocity.sqrMagnitude >= EPSILON)
             transform.rotation = Quaternion.LookRotation(velocity);
-    }
-
-    private void MoveInAir()
-    {
-        _rigidbody.useGravity = true;
+        
     }
 }
