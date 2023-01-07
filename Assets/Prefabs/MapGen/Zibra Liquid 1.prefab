@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6ee375c01c3754092bcd25096894ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxNumParticles: 262144
+  MaxNumParticles: 131072
   EnableDownscale: 0
   DownscaleFactor: 0.5
   InitialState: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   MaxFramesInFlight: 3
   SimulationTimeScale: 40
   SimulationIterationsPerFrame: 1
-  GridResolution: 128
+  GridResolution: 64
   RunSimulation: 1
   RunRendering: 1
   EnableContainerMovementFeedback: 0
