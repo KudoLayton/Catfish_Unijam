@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1597,10 +1597,36 @@ MonoBehaviour:
   fishCoolTime: 2
   catCoolTime: 3
   currentGameSet:
-    time: 0
-    fishtypes: []
-  fishPrefab: {fileID: 0}
-  catPrefab: {fileID: 0}
+    time: 60
+    fishtypes:
+    - color: White
+      score: 1
+      probability: 0.3
+      prefab: {fileID: 6863542572677181797, guid: c0ddf29a66e0f4318af1afadd2882ce3, type: 3}
+    - color: Green
+      score: 2
+      probability: 0.24
+      prefab: {fileID: 8281513398398022970, guid: 456ab061c7f024e6ca05b693b2a52a80, type: 3}
+    - color: Blue
+      score: 3
+      probability: 0.2
+      prefab: {fileID: 6725913838714484655, guid: 2f152c3d2bc1d4fd8b94bc9be8044eb6, type: 3}
+    - color: Purple
+      score: 4
+      probability: 0.15
+      prefab: {fileID: 198625547288120172, guid: c2e1239f0fbeb4a1185799b43118c2d3, type: 3}
+    - color: Gold
+      score: 5
+      probability: 0.1
+      prefab: {fileID: 6416284352357036661, guid: 1766473bd82b04e57880c9b3c812439b, type: 3}
+    - color: Red
+      score: 15
+      probability: 0.1
+      prefab: {fileID: 4068949943710012665, guid: f9ce08479d28646b7be7503646e684fa, type: 3}
+  catPrefabs:
+  - {fileID: 7723853129173107225, guid: 4a64a7ec6b6c44d2ca1200c22104932a, type: 3}
+  - {fileID: 7678348072085122900, guid: 0c685a34515004a63b0181520a50de81, type: 3}
+  - {fileID: 6722091606404298974, guid: 7478f7d5ca8c24d33a6420ae0f32e06e, type: 3}
 --- !u!4 &581395567
 Transform:
   m_ObjectHideFlags: 0
@@ -1614,7 +1640,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &585559707 stripped
 Transform:
@@ -3885,7 +3911,7 @@ GameObject:
   - component: {fileID: 1527240214}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5195,7 +5221,7 @@ Transform:
   - {fileID: 115447070}
   - {fileID: 2106605185}
   m_Father: {fileID: 1505008390}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2076536355
 PrefabInstance:
