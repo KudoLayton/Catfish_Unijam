@@ -4,18 +4,38 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    private static GameManager instance = null;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    void awake()
+    {
+        if (instance)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+
     [System.Serializable]
     public struct FishType
     {
         public string color;
         public int score;
         public float probability;
-        public FishType(string color, int score, float probability)
-        {
-            this.color = color;
-            this.score = score;
-            this.probability = probability;
-        }
+        public GameObject prefab;
 
         public string GetColor()
         {
@@ -43,6 +63,19 @@ public class GameManager : MonoBehaviour
             this.time = time;
             this.fishtypes = fishtypes;
         }
+
+        public GameObject GetPrefab(string name)
+        {
+            foreach (FishType ftype in fishtypes)
+            {
+                if (name == ftype.GetColor())
+                {
+                    return ftype.prefab;
+                }
+            }
+
+            return null;
+        }
     }
     int fishSlotNum = 6;
     int catSlotNum = 6;
@@ -51,8 +84,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] float fishCoolTime = 2.0f;
     [SerializeField] float catCoolTime = 3.0f;
     [SerializeField] GameSetting currentGameSet;
-    [SerializeField] GameObject fishPrefab;
-    [SerializeField] GameObject catPrefab;
+    [SerializeField] GameObject[] catPrefabs;
+
     bool[] fishSlot;
     bool[] catSlot;
     int score;
@@ -129,12 +162,18 @@ public class GameManager : MonoBehaviour
         // 빈 자리에 짤방
     }
 
+    public void DeleteFishSlot(int n) {
+        fishSlot[n] = false;
+    }
+
+    public void DeleteCatSlot(int n) {
+        catSlot[n] = false;
+    }
     
     // n번 Fish Slot에 물고기를 새로 채웁니다. 확률에 기반합니다.
     private void AddFishSlot(int n)
     {
         Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 3.75f, 12.0f);
-        GameObject genFish = Instantiate(fishPrefab, genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         float sumProb = 0.0f;
         float rand = Random.Range(0.0f, 1.0f);
         string genColor = "";
@@ -150,7 +189,7 @@ public class GameManager : MonoBehaviour
                 sumProb += fishdefs.GetProbability();
             }
         }
-
+        GameObject genFish = Instantiate(currentGameSet.GetPrefab(genColor), genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
         genFish.GetComponent<FishBehavior>().SetSlot(n);
         genFish.GetComponent<FishBehavior>().EnterJellyfish();
@@ -168,7 +207,24 @@ public class GameManager : MonoBehaviour
     // n번 Cat Slot에 고양이를 새로 채웁니다.
     private void AddCatSlot(int n)
     {
-
+        Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 3.75f, 12.0f);
+        float sumProb = 0.0f;
+        int m = catPrefabs.Length;
+        float rand = Random.Range(0.0f, 1.0f);
+        int i = 0;
+        for (; i < m; i++)
+        {
+            if (sumProb <= rand && rand <= sumProb + 1.0f / m)
+            { //probability hits
+                break;
+            }
+            else
+            {
+                sumProb += 1.0f / m;
+            }
+        }
+        GameObject genFish = Instantiate(catPrefabs[i], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        catSlot[n] = true;
     }
 
     
@@ -236,6 +292,9 @@ public class GameManager : MonoBehaviour
         return -1;
     }
 
+    void start() {
+        GameStart();
+    }
 
     // Update
     void FixedUpdate()

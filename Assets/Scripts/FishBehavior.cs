@@ -56,6 +56,7 @@ public class FishBehavior : MonoBehaviour
     public void LeaveJellyfish()
     {
         GetComponent<Rigidbody>().isKinematic = false;
+        GameManager.Instance.DeleteFishSlot(slot);
     }
 
     public void EatMarimo()
@@ -70,5 +71,24 @@ public class FishBehavior : MonoBehaviour
         _beforeExitVelocity = _rigidbody.velocity;
         _exitTime = Time.time;
         _isExiting = true;
+    }
+
+    void OnTriggerStay(Collider triggerobj)
+    {
+        GameObject fieldObject = triggerobj.transform.gameObject;
+        if (triggerobj.tag == "Fluid")
+        {
+            Vector3 colliderPoint = fieldObject.GetComponent<BoxCollider>().center - new Vector3(fieldObject.GetComponent<BoxCollider>().size.x, 0, 0);
+            float radius = (gameObject.transform.position - colliderPoint).magnitude;
+            float f = fieldObject.GetComponent<ForceObject>().forceEff;
+            Vector3 finalForce = fieldObject.GetComponent<ForceObject>().force * f / (radius * radius);
+            gameObject.GetComponent<Rigidbody>().AddForce(finalForce);
+        }
+        else if (triggerobj.tag == "Cat")
+        {
+            GameObject fishObj = gameObject;
+            GameObject catObj = fieldObject;
+            GameManager.Instance.CatchCat(fishObj, catObj);
+        }
     }
 }
