@@ -61,7 +61,7 @@ MonoBehaviour:
   MaxFramesInFlight: 3
   SimulationTimeScale: 40
   SimulationIterationsPerFrame: 1
-  GridResolution: 64
+  GridResolution: 128
   RunSimulation: 1
   RunRendering: 1
   EnableContainerMovementFeedback: 0
