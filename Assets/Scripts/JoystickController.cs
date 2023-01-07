@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
+public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     private Image _backgroundImage;
     private Image _joystickImage;
@@ -50,13 +50,6 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
         OnDrag(eventData);
     }
     
-    public float GetHorizontalValue()
-    {
-        return _inputVector.x;
-    }
-    
-    public float GetVerticalValue()
-    {
-        return _inputVector.y;
-    }
+    public float Horizontal => _inputVector.x;
+    public float Vertical => _inputVector.y;
 }
