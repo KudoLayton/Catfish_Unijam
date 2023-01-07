@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1444692159203077487}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6ee375c01c3754092bcd25096894ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxNumParticles: 262144
+  MaxNumParticles: 131072
   EnableDownscale: 0
   DownscaleFactor: 0.5
   InitialState: 0
@@ -169,3 +170,69 @@ MonoBehaviour:
   EmbeddingTextureBlocks: 0
   SDFTextureDimension: 0
   EmbeddingTextureDimension: 0
+--- !u!1001 &3479737789426096060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8442406184425578424}
+    m_Modifications:
+    - target: {fileID: 2613795085135493841, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: VolumePerSimTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493842, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_Name
+      value: ZibraLiquid Emitter 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+--- !u!4 &1444692159203077487 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2613795085135493843, guid: 0b21ab485bb0f164a92a3e860ab424bd, type: 3}
+  m_PrefabInstance: {fileID: 3479737789426096060}
+  m_PrefabAsset: {fileID: 0}
