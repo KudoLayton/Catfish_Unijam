@@ -148,9 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 
   slot: 0
-  exitSpeed: 0
-  exitDistance: 0
-  exitTurnTime: 0
+  exitSpeed: 2
+  exitDistance: 8
+  exitTurnTime: 1
 --- !u!1 &6863619889867757525
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +708,6 @@ GameObject:
   - component: {fileID: 8897556387817504002}
   - component: {fileID: 7877813135030659657}
   - component: {fileID: 8717088132635481544}
-  - component: {fileID: 4920912511083304953}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -723,14 +722,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8981637499921245313}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -0.097, y: 0.188, z: 0.22}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6867227028596318723}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!33 &7877813135030659657
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -781,17 +780,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4920912511083304953
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8981637499921245313}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
