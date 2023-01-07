@@ -4,6 +4,31 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    private static GameManager instance = null;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    void awake()
+    {
+        if (instance)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+
     [System.Serializable]
     public struct FishType
     {
