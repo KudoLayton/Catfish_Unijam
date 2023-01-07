@@ -290,7 +290,7 @@ MonoBehaviour:
   EnableContainerMovementFeedback: 0
   VisualizeSceneSDF: 0
   ContainerSize: {x: 1, y: 29.698484, z: 29.698484}
-  UseFixedTimestep: 0
+  UseFixedTimestep: 1
   SDFColliders:
   - {fileID: 443663034}
   - {fileID: 1322440859}

@@ -156,7 +156,7 @@ namespace com.zibra.liquid.Manipulators
 #endif
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             AdditionalData0.w = Friction;
         }
