@@ -5,7 +5,7 @@ public class GyroInputController : MonoBehaviour
 {
     private float _angle;
     private float _prevAngle;
-    [SerializeField] private float MinimumTilt;
+    [SerializeField] private float minimumTilt;
 
     void Start()
     {
@@ -21,6 +21,7 @@ public class GyroInputController : MonoBehaviour
         if (angleDiff > 180) angleDiff -= 360;
         if (angleDiff < -180) angleDiff += 360;
         transform.Rotate(Vector3.right, angleDiff);
+        Camera.main.transform.Rotate(Vector3.back, angleDiff * 0.5f);
         _prevAngle = _angle;
     }
 
