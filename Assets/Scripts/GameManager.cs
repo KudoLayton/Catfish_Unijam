@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
             this.fishtypes = fishtypes;
         }
     }
+    [SerializeField]
+    public Dictionary<string, GameObject> fishPrefabs = new Dictionary<string, GameObject>();
     int fishSlotNum = 6;
     int catSlotNum = 6;
     [SerializeField] int fishInitNum = 3;
@@ -134,7 +136,6 @@ public class GameManager : MonoBehaviour
     private void AddFishSlot(int n)
     {
         Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 3.75f, 12.0f);
-        GameObject genFish = Instantiate(fishPrefab, genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         float sumProb = 0.0f;
         float rand = Random.Range(0.0f, 1.0f);
         string genColor = "";
@@ -150,7 +151,7 @@ public class GameManager : MonoBehaviour
                 sumProb += fishdefs.GetProbability();
             }
         }
-
+        GameObject genFish = Instantiate(fishPrefabs[genColor], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
         genFish.GetComponent<FishBehavior>().SetSlot(n);
         genFish.GetComponent<FishBehavior>().EnterJellyfish();
