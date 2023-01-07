@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 1322440859}
   - component: {fileID: 1322440860}
   m_Layer: 0
-  m_Name: Cube(Clone)
+  m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +945,7 @@ Transform:
   m_GameObject: {fileID: 1322440858}
   m_LocalRotation: {x: 0, y: 0.0011344751, z: 0, w: 0.9999994}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 10, y: 0, z: 10}
+  m_LocalScale: {x: 3, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1887743572}
