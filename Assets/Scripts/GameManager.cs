@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(this.gameObject);
+
+        GameStart();
     }
 
 
@@ -86,8 +88,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameSetting currentGameSet;
     [SerializeField] GameObject[] catPrefabs;
 
-    bool[] fishSlot;
-    bool[] catSlot;
+    bool[] fishSlot = new bool[6];
+    bool[] catSlot = new bool[6];
     int score;
     
     long gameTick;
@@ -207,7 +209,7 @@ public class GameManager : MonoBehaviour
     // n번 Cat Slot에 고양이를 새로 채웁니다.
     private void AddCatSlot(int n)
     {
-        Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 3.75f, 12.0f);
+        Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 1.3f, -14.0f);
         float sumProb = 0.0f;
         int m = catPrefabs.Length;
         float rand = Random.Range(0.0f, 1.0f);
@@ -290,10 +292,6 @@ public class GameManager : MonoBehaviour
             }
         }
         return -1;
-    }
-
-    void start() {
-        GameStart();
     }
 
     // Update
