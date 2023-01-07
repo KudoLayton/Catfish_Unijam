@@ -635,6 +635,12 @@ MonoBehaviour:
   waterDrag: 5
   jumpForce: 20
   maxSpeed: 3
+  onEnterWater:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeaveWater:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &701086445755798035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,4 +654,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  useJoystick: 0
+  useTestInput: 1

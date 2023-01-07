@@ -643,10 +643,6 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1910780562}
-    - target: {fileID: 701086445755798035, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
-      propertyPath: useTestInput
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2856801828023533694, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
       propertyPath: m_Name
       value: Fish
