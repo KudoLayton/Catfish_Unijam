@@ -11,7 +11,7 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
 {
     private Image _backgroundImage;
     private Image _joystickImage;
-    private Vector3 _inputVector;
+    private Vector2 _inputVector;
 
     private void Start()
     {
@@ -29,19 +29,19 @@ public class JoystickController : MonoBehaviour, IDragHandler, IPointerUpHandler
         pos.y /= sizeDelta.y;
         
         // normalize in [-1, 1]
-        _inputVector = new Vector3(pos.x * 2, pos.y * 2, 0);
+        _inputVector = new Vector2(pos.x * 2, pos.y * 2);
         _inputVector = _inputVector.magnitude > 1 ? _inputVector.normalized : _inputVector;
         
         // move joystick image
-        _joystickImage.rectTransform.anchoredPosition = new Vector3(_inputVector.x * (sizeDelta.x / 3),
+        _joystickImage.rectTransform.anchoredPosition = new Vector2(_inputVector.x * (sizeDelta.x / 3),
             _inputVector.y * (sizeDelta.y / 3));
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         // reset
-        _inputVector = Vector3.zero;
-        _joystickImage.rectTransform.anchoredPosition = Vector3.zero;
+        _inputVector = Vector2.zero;
+        _joystickImage.rectTransform.anchoredPosition = Vector2.zero;
     }
 
     public void OnPointerDown(PointerEventData eventData)
