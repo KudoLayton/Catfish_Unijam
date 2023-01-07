@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float catCoolTime = 3.0f;
     [SerializeField] GameSetting currentGameSet;
     [SerializeField] GameObject[] catPrefabs;
+    [SerializeField] private GameObject Map;
 
     bool[] fishSlot = new bool[6];
     bool[] catSlot = new bool[6];
@@ -196,6 +197,7 @@ public class GameManager : MonoBehaviour
         genFish.GetComponent<FishBehavior>().SetSlot(n);
         genFish.GetComponent<FishBehavior>().EnterJellyfish();
         fishSlot[n] = true;
+        genFish.transform.SetParent(Map.transform);
     }
 
     
@@ -225,8 +227,9 @@ public class GameManager : MonoBehaviour
                 sumProb += 1.0f / m;
             }
         }
-        GameObject genFish = Instantiate(catPrefabs[i], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        GameObject genCat = Instantiate(catPrefabs[i], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         catSlot[n] = true;
+        genCat.transform.SetParent(Map.transform);
     }
 
     
