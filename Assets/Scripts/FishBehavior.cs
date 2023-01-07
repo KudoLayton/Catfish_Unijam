@@ -34,7 +34,7 @@ public class FishBehavior : MonoBehaviour
         Vector3 force = new Vector3(_joystickController.Horizontal, _joystickController.Vertical, 0) * maxForce;
         _rigidbody.AddForce(force);
         var velocity = _rigidbody.velocity;
-        if (velocity.magnitude < EPSILON)
+        if (velocity.sqrMagnitude >= EPSILON)
             transform.rotation = Quaternion.LookRotation(velocity);
     }
 
