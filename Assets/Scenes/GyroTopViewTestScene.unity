@@ -3008,11 +3008,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4503174227091139508, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7273790758914814144, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
       propertyPath: exitDistance
       value: 1000
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4503174227091139508, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
+    - {fileID: 8621298133618057722, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98865c72aeab84848814ff2923e2d37e, type: 3}
 --- !u!4 &2146733771 stripped
 Transform:
@@ -3070,14 +3076,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1626415214528454799, guid: ab6109c64fdf6e542b319bef8c64c0ab, type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626415214528454799, guid: ab6109c64fdf6e542b319bef8c64c0ab, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c9b903d3710d2468e83950e94e94391e, type: 2}
     - target: {fileID: 8711472814104707265, guid: ab6109c64fdf6e542b319bef8c64c0ab, type: 3}
       propertyPath: m_Name
       value: Marimo
