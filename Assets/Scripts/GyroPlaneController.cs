@@ -32,15 +32,8 @@ public class GyroPlaneController : MonoBehaviour
 #endif
         if (_faceDirection.y < 0) return;
         var planeDirection = new Vector3(_faceDirection.x, _faceDirection.y, 0).normalized;
-        // outside +- 45
-        if (planeDirection.y < planeDirection.x)
-        {
-            planeDirection = new Vector3(1, 1, 0);
-        } 
-        else if (planeDirection.y < -planeDirection.x)
-        {
-            planeDirection = new Vector3(-1, 1, 0);
-        }
+        planeDirection.z = -0.3f;
+        planeDirection = planeDirection.normalized;
         var planeRotation = Quaternion.FromToRotation(Vector3.up, planeDirection);
         transform.rotation = planeRotation;
     }
