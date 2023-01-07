@@ -71,4 +71,14 @@ public class FishBehavior : MonoBehaviour
         _exitTime = Time.time;
         _isExiting = true;
     }
+
+    void OnTriggerStay(Collider field)
+    {
+        GameObject fieldObject = field.transform.gameObject;
+        Vector3 colliderPoint = fieldObject.GetComponent<BoxCollider>().center - new Vector3(fieldObject.GetComponent<BoxCollider>().size.x, 0, 0);
+        float radius = (gameObject.transform.position - colliderPoint).magnitude;
+        float f = fieldObject.GetComponent<ForceObject>().forceEff;
+        Vector3 finalForce = fieldObject.GetComponent<ForceObject>().force * f / (radius * radius);
+        gameObject.GetComponent<Rigidbody>().AddForce(finalForce);
+    }
 }

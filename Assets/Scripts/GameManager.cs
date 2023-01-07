@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
     // n번 Cat Slot에 고양이를 새로 채웁니다.
     private void AddCatSlot(int n)
     {
-
+        
     }
 
     
