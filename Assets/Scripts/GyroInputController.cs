@@ -26,7 +26,7 @@ public class GyroInputController : MonoBehaviour
             _angle = -Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
         }
 #endif
-        Debug.Log(_angle);
+        // Debug.Log(_angle);
     }
 
     public float GetAngle()
