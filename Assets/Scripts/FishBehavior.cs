@@ -10,6 +10,7 @@ public class FishBehavior : MonoBehaviour
     private Vector3 _beforeExitVelocity;
     private float _exitTime;
     private Rigidbody _rigidbody;
+    private GameObject _quitEffectObject;
     [SerializeField] private float exitSpeed;
     [SerializeField] private float exitDistance;
     [SerializeField] private float exitTurnTime;
@@ -23,6 +24,8 @@ public class FishBehavior : MonoBehaviour
     {
         _isExiting = false;
         _rigidbody = GetComponent<Rigidbody>();
+        _quitEffectObject = transform.GetChild(1).gameObject;
+        _quitEffectObject.transform.localScale = Vector3.zero;
     }
 
     private void Update()
@@ -30,6 +33,9 @@ public class FishBehavior : MonoBehaviour
         if (_isExiting)
         {
             var progress = (Time.time - _exitTime) / exitTurnTime;
+            if (progress < 0.5f) _quitEffectObject.transform.localScale = Vector3.one * (progress * 2);
+            else if (progress < 1) _quitEffectObject.transform.localScale = Vector3.one * (2 - progress * 2);
+            else _quitEffectObject.transform.localScale = Vector3.zero;
             _rigidbody.velocity = progress > 1 ? _exitVelocity : Vector3.Lerp(_beforeExitVelocity, _exitVelocity, progress);
             if (Mathf.Abs(transform.position.x) > exitDistance)
                 gameObject.SetActive(false);
