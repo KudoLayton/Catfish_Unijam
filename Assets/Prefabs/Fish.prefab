@@ -556,7 +556,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2857568201825833752}
   - component: {fileID: 2807080022226907606}
-  - component: {fileID: 2763061222783836726}
   - component: {fileID: 701086445755798033}
   - component: {fileID: 701086445755798034}
   - component: {fileID: 701086445755798035}
@@ -604,24 +603,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!143 &2763061222783836726
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2856801828023533694}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.16, z: 0}
 --- !u!54 &701086445755798033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -652,7 +633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxForce: 2
   waterDrag: 5
-  jumpForce: 100
+  jumpForce: 20
+  maxSpeed: 3
 --- !u!114 &701086445755798035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,3 +648,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+  useJoystick: 0

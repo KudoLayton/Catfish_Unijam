@@ -5,6 +5,7 @@ public class FishBehavior : MonoBehaviour
     [SerializeField] private float maxForce;
     [SerializeField] private float waterDrag;
     [SerializeField] private float jumpForce;
+    [SerializeField] private float maxSpeed;
     private Rigidbody _rigidbody;
     private const float EPSILON = 0.01f;
     private bool _prevInWater;
@@ -33,7 +34,11 @@ public class FishBehavior : MonoBehaviour
 
     public void Jump()
     {
-        _rigidbody.AddForce(0, jumpForce, 0);
+        if (IsInWater())
+        {
+            _rigidbody.AddForce(Vector3.up * jumpForce);
+            _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
+        }
     }
 
     private bool IsInWater()
