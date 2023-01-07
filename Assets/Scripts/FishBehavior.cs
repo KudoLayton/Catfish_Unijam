@@ -11,9 +11,9 @@ public class FishBehavior : MonoBehaviour
     private float _exitTime;
     private Rigidbody _rigidbody;
     private GameObject _quitEffectObject;
-    [SerializeField] private float exitSpeed;
-    [SerializeField] private float exitDistance;
-    [SerializeField] private float exitTurnTime;
+    [SerializeField] private float exitSpeed = 2;
+    [SerializeField] private float exitDistance = 8;
+    [SerializeField] private float exitTurnTime = 1;
 
     public void SetColor(string color)
     {
