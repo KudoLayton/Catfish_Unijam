@@ -648,6 +648,7 @@ MonoBehaviour:
   color: 
   exitSpeed: 2
   exitDistance: 100
+  exitTurnTime: 1
 --- !u!135 &8621298133618057722
 SphereCollider:
   m_ObjectHideFlags: 0
