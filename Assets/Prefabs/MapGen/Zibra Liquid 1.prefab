@@ -84,15 +84,15 @@ MonoBehaviour:
   FluidMeshMaterial: {fileID: 2100000, guid: 248b1858901577949a18bb8d09cb583f, type: 2}
   UpscaleMaterial: {fileID: 2100000, guid: 374557399a8cb1b499aee6a0cc226496, type: 2}
   SDFRenderMaterial: {fileID: 2100000, guid: a29ad26b5c6c24c43ba0cbdc686b6b41, type: 2}
-  Color: {r: 0.3411765, g: 0.92156863, b: 0.85236126, a: 1}
+  Color: {r: 0.7048772, g: 0.8544804, b: 0.9056604, a: 1}
   ReflectionColor: {r: 1.39772, g: 1.39772, b: 1.39772, a: 1}
   EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-  Roughness: 0.04000002
-  Metalness: 0.3
-  ScatteringAmount: 5
-  AbsorptionAmount: 20
-  IndexOfRefraction: 1.333
-  FluidSurfaceBlur: 1.5
+  Roughness: 0.88
+  Metalness: 0.171
+  ScatteringAmount: 0
+  AbsorptionAmount: 4
+  IndexOfRefraction: 1.015
+  FluidSurfaceBlur: 3.15
   SmoothnessOld: 0.96
   Shadowing: 0
   NoOpMaterial: {fileID: 2100000, guid: 248b1858901577949a18bb8d09cb583f, type: 2}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gravity: {x: 0, y: -9.81, z: 0}
-  FluidStiffness: 0.1
+  FluidStiffness: 0.02
   ParticleDensity: 2
   Viscosity: 0.392
   SurfaceTension: 0
