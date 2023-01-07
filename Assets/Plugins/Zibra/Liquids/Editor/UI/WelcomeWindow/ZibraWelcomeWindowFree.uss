@@ -1,0 +1,7 @@
+.free-only {
+    display: flex;
+}
+
+.paid-only {
+    display: none;
+}

@@ -1,0 +1,582 @@
+fileFormatVersion: 2
+guid: 55589f8ff247ff246b37c05aa0fffe58
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: Chest_M
+    100006: DeformationSystem
+    100008: Ear1_L
+    100010: Ear1_R
+    100012: Ear2_L
+    100014: Ear2_R
+    100016: Ear3_L
+    100018: Ear3_R
+    100020: Elbow_L
+    100022: Elbow_R
+    100024: Eye_L
+    100026: Eye_R
+    100028: EyeEnd_L
+    100030: EyeEnd_R
+    100032: Fingers1_L
+    100034: Fingers1_R
+    100036: Fingers2_L
+    100038: Fingers2_R
+    100040: Geometry
+    100042: Head_M
+    100044: HeadEnd_M
+    100046: Hip_L
+    100048: Hip_R
+    100050: IndexFinger1_L
+    100052: IndexFinger1_R
+    100054: IndexFinger2_L
+    100056: IndexFinger2_R
+    100058: IndexToe1_L
+    100060: IndexToe1_R
+    100062: IndexToe2_L
+    100064: IndexToe2_R
+    100066: Jaw_M
+    100068: JawEnd_M
+    100070: Knee_L
+    100072: Knee_R
+    100074: Main
+    100076: MiddleFinger1_L
+    100078: MiddleFinger1_R
+    100080: MiddleFinger2_L
+    100082: MiddleFinger2_R
+    100084: MiddleToe1_L
+    100086: MiddleToe1_R
+    100088: MiddleToe2_L
+    100090: MiddleToe2_R
+    100092: Neck_M
+    100094: PinkyFinger1_L
+    100096: PinkyFinger1_R
+    100098: PinkyFinger2_L
+    100100: PinkyFinger2_R
+    100102: PinkyToe1_L
+    100104: PinkyToe1_R
+    100106: PinkyToe2_L
+    100108: PinkyToe2_R
+    100110: RingFinger1_L
+    100112: RingFinger1_R
+    100114: RingFinger2_L
+    100116: RingFinger2_R
+    100118: RingToe1_L
+    100120: RingToe1_R
+    100122: RingToe2_L
+    100124: RingToe2_R
+    100126: Root_M
+    100128: Scapula_L
+    100130: Scapula_R
+    100132: Shoulder_L
+    100134: Shoulder_R
+    100136: Spine1_M
+    100138: Tail0_M
+    100140: Tail1_M
+    100142: Tail2_M
+    100144: Tail3_M
+    100146: Tail4_M
+    100148: Tail5_M
+    100150: Tail6_M
+    100152: tiger
+    100154: //RootNode
+    100156: Toes1_L
+    100158: Toes1_R
+    100160: Toes2_L
+    100162: Toes2_R
+    100164: Wrist_L
+    100166: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: Chest_M
+    400006: DeformationSystem
+    400008: Ear1_L
+    400010: Ear1_R
+    400012: Ear2_L
+    400014: Ear2_R
+    400016: Ear3_L
+    400018: Ear3_R
+    400020: Elbow_L
+    400022: Elbow_R
+    400024: Eye_L
+    400026: Eye_R
+    400028: EyeEnd_L
+    400030: EyeEnd_R
+    400032: Fingers1_L
+    400034: Fingers1_R
+    400036: Fingers2_L
+    400038: Fingers2_R
+    400040: Geometry
+    400042: Head_M
+    400044: HeadEnd_M
+    400046: Hip_L
+    400048: Hip_R
+    400050: IndexFinger1_L
+    400052: IndexFinger1_R
+    400054: IndexFinger2_L
+    400056: IndexFinger2_R
+    400058: IndexToe1_L
+    400060: IndexToe1_R
+    400062: IndexToe2_L
+    400064: IndexToe2_R
+    400066: Jaw_M
+    400068: JawEnd_M
+    400070: Knee_L
+    400072: Knee_R
+    400074: Main
+    400076: MiddleFinger1_L
+    400078: MiddleFinger1_R
+    400080: MiddleFinger2_L
+    400082: MiddleFinger2_R
+    400084: MiddleToe1_L
+    400086: MiddleToe1_R
+    400088: MiddleToe2_L
+    400090: MiddleToe2_R
+    400092: Neck_M
+    400094: PinkyFinger1_L
+    400096: PinkyFinger1_R
+    400098: PinkyFinger2_L
+    400100: PinkyFinger2_R
+    400102: PinkyToe1_L
+    400104: PinkyToe1_R
+    400106: PinkyToe2_L
+    400108: PinkyToe2_R
+    400110: RingFinger1_L
+    400112: RingFinger1_R
+    400114: RingFinger2_L
+    400116: RingFinger2_R
+    400118: RingToe1_L
+    400120: RingToe1_R
+    400122: RingToe2_L
+    400124: RingToe2_R
+    400126: Root_M
+    400128: Scapula_L
+    400130: Scapula_R
+    400132: Shoulder_L
+    400134: Shoulder_R
+    400136: Spine1_M
+    400138: Tail0_M
+    400140: Tail1_M
+    400142: Tail2_M
+    400144: Tail3_M
+    400146: Tail4_M
+    400148: Tail5_M
+    400150: Tail6_M
+    400152: tiger
+    400154: //RootNode
+    400156: Toes1_L
+    400158: Toes1_R
+    400160: Toes2_L
+    400162: Toes2_R
+    400164: Wrist_L
+    400166: Wrist_R
+    2100000: tiger
+    4300000: tiger
+    7400000: Tiger_idle breathing
+    7400002: Tiger_attack1
+    7400004: Tiger_idle to walk
+    7400006: Tiger_walk
+    7400008: Tiger_walk to idle
+    7400010: Tiger_idle roar
+    7400012: Tiger_idle to run
+    7400014: Tiger_run
+    7400016: Tiger_run to idle
+    7400018: Tiger_attack2
+    7400020: Tiger_death
+    9500000: //RootNode
+    13700000: tiger
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tiger_idle breathing
+      takeName: Tiger_idle breathing
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_attack1
+      takeName: Tiger_attack1
+      firstFrame: 120
+      lastFrame: 158
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 120
+    - serializedVersion: 16
+      name: Tiger_idle to walk
+      takeName: Tiger_idle to walk
+      firstFrame: 200
+      lastFrame: 216
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_walk
+      takeName: Tiger_walk
+      firstFrame: 230
+      lastFrame: 266
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 230
+    - serializedVersion: 16
+      name: Tiger_walk to idle
+      takeName: Tiger_walk to idle
+      firstFrame: 280
+      lastFrame: 296
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_idle roar
+      takeName: Tiger_idle roar
+      firstFrame: 320
+      lastFrame: 386
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_idle to run
+      takeName: Tiger_idle to run
+      firstFrame: 410
+      lastFrame: 419
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_run
+      takeName: Tiger_run
+      firstFrame: 435
+      lastFrame: 449
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 435
+    - serializedVersion: 16
+      name: Tiger_run to idle
+      takeName: Tiger_run to idle
+      firstFrame: 460
+      lastFrame: 471
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiger_attack2
+      takeName: Tiger_attack2
+      firstFrame: 490
+      lastFrame: 548
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 490
+    - serializedVersion: 16
+      name: Tiger_death
+      takeName: Tiger_death
+      firstFrame: 570
+      lastFrame: 634
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

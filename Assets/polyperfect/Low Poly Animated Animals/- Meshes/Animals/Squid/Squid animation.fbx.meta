@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 056e83b18bcef774ea6e41acbc0fdfee
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chest_M
+    100002: DeformationSystem
+    100004: FinLower__1_L
+    100006: FinLower__1_R
+    100008: FinSideLower_1_L
+    100010: FinSideLower_1_R
+    100012: FinSideLower_2_L
+    100014: FinSideLower_2_R
+    100016: FinSideLower_3_L
+    100018: FinSideLower_3_R
+    100020: FinSideLower_4_L
+    100022: FinSideLower_4_R
+    100024: FinSideLower_5_L
+    100026: FinSideLower_5_R
+    100028: FinSideUpper_1_L
+    100030: FinSideUpper_1_R
+    100032: FinSideUpper_2_L
+    100034: FinSideUpper_2_R
+    100036: FinSideUpper_3_L
+    100038: FinSideUpper_3_R
+    100040: FinSideUpper_4_L
+    100042: FinSideUpper_4_R
+    100044: FinSideUpper_5_L
+    100046: FinSideUpper_5_R
+    100048: FinUpper_1_L
+    100050: FinUpper_1_R
+    100052: FinUpper_21_L
+    100054: FinUpper_21_R
+    100056: FinUpper_2_L
+    100058: FinUpper_2_R
+    100060: FinUpper_31_L
+    100062: FinUpper_31_R
+    100064: FinUpper_3_L
+    100066: FinUpper_3_R
+    100068: FinUpper_41_L
+    100070: FinUpper_41_R
+    100072: FinUpper_4_L
+    100074: FinUpper_4_R
+    100076: FinUpper_51_L
+    100078: FinUpper_51_R
+    100080: FinUpper_5_L
+    100082: FinUpper_5_R
+    100084: Geometry
+    100086: Head_M
+    100088: HeadEnd_M
+    100090: Leg_1_L
+    100092: Leg_1_R
+    100094: Leg_2_L
+    100096: Leg_2_R
+    100098: Leg_3_L
+    100100: Leg_3_R
+    100102: Leg_4_L
+    100104: Leg_4_R
+    100106: Leg_5_L
+    100108: Leg_5_R
+    100110: Leg_6_L
+    100112: Leg_6_R
+    100114: Leg_7_L
+    100116: Leg_7_R
+    100118: Main
+    100120: Root_M
+    100122: Spine1_M
+    100124: Squid
+    100126: //RootNode
+    400000: Chest_M
+    400002: DeformationSystem
+    400004: FinLower__1_L
+    400006: FinLower__1_R
+    400008: FinSideLower_1_L
+    400010: FinSideLower_1_R
+    400012: FinSideLower_2_L
+    400014: FinSideLower_2_R
+    400016: FinSideLower_3_L
+    400018: FinSideLower_3_R
+    400020: FinSideLower_4_L
+    400022: FinSideLower_4_R
+    400024: FinSideLower_5_L
+    400026: FinSideLower_5_R
+    400028: FinSideUpper_1_L
+    400030: FinSideUpper_1_R
+    400032: FinSideUpper_2_L
+    400034: FinSideUpper_2_R
+    400036: FinSideUpper_3_L
+    400038: FinSideUpper_3_R
+    400040: FinSideUpper_4_L
+    400042: FinSideUpper_4_R
+    400044: FinSideUpper_5_L
+    400046: FinSideUpper_5_R
+    400048: FinUpper_1_L
+    400050: FinUpper_1_R
+    400052: FinUpper_21_L
+    400054: FinUpper_21_R
+    400056: FinUpper_2_L
+    400058: FinUpper_2_R
+    400060: FinUpper_31_L
+    400062: FinUpper_31_R
+    400064: FinUpper_3_L
+    400066: FinUpper_3_R
+    400068: FinUpper_41_L
+    400070: FinUpper_41_R
+    400072: FinUpper_4_L
+    400074: FinUpper_4_R
+    400076: FinUpper_51_L
+    400078: FinUpper_51_R
+    400080: FinUpper_5_L
+    400082: FinUpper_5_R
+    400084: Geometry
+    400086: Head_M
+    400088: HeadEnd_M
+    400090: Leg_1_L
+    400092: Leg_1_R
+    400094: Leg_2_L
+    400096: Leg_2_R
+    400098: Leg_3_L
+    400100: Leg_3_R
+    400102: Leg_4_L
+    400104: Leg_4_R
+    400106: Leg_5_L
+    400108: Leg_5_R
+    400110: Leg_6_L
+    400112: Leg_6_R
+    400114: Leg_7_L
+    400116: Leg_7_R
+    400118: Main
+    400120: Root_M
+    400122: Spine1_M
+    400124: Squid
+    400126: //RootNode
+    2100000: Squid
+    4300000: Squid
+    7400000: Squid_Idle
+    7400002: Squid_Idle to Swim
+    7400004: Squid_Swim
+    7400006: Squid_Swim to Idle
+    7400008: Squid_Death
+    9500000: //RootNode
+    13700000: Squid
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Squid_Idle
+      takeName: Squid_Idle
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Squid_Idle to Swim
+      takeName: Squid_Idle to Swim
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Squid_Swim
+      takeName: Squid_Swim
+      firstFrame: 160
+      lastFrame: 202
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 160
+    - serializedVersion: 16
+      name: Squid_Swim to Idle
+      takeName: Squid_Swim to Idle
+      firstFrame: 230
+      lastFrame: 256
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Squid_Death
+      takeName: Squid_Death
+      firstFrame: 280
+      lastFrame: 323
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

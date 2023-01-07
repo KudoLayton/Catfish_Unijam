@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 242952bc1b96408489650997c774dc33
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: BackToe1_L
+    100006: BackToe1_R
+    100008: BackToe2_L
+    100010: BackToe2_R
+    100012: BackToe3_L
+    100014: BackToe3_R
+    100016: Chest_M
+    100018: DeformationSystem
+    100020: Elbow_L
+    100022: Elbow_R
+    100024: Eye_L
+    100026: Eye_R
+    100028: EyeEnd_L
+    100030: EyeEnd_R
+    100032: Geometry
+    100034: Head_M
+    100036: HeadEnd_M
+    100038: Hip_L
+    100040: Hip_R
+    100042: IndexFinger1_L
+    100044: IndexFinger1_R
+    100046: IndexFinger2_L
+    100048: IndexFinger2_R
+    100050: Jaw_M
+    100052: JawEnd_M
+    100054: Knee_L
+    100056: Knee_R
+    100058: Main
+    100060: Neck_M
+    100062: Root_M
+    100064: Scapula_L
+    100066: Scapula_R
+    100068: Shoulder_L
+    100070: Shoulder_R
+    100072: Spine1_M
+    100074: Tail1_M
+    100076: Tail2_M
+    100078: Tail3_M
+    100080: Tail3ASide_L
+    100082: Tail3ASide_R
+    100084: Tail3End_M
+    100086: Tail3Side_L
+    100088: Tail3Side_R
+    100090: Tail3SideEnd_L
+    100092: Tail3SideEnd_R
+    100094: Toes_L
+    100096: Toes_R
+    100098: ToesEnd_L
+    100100: ToesEnd_R
+    100102: //RootNode
+    100104: tucan_rig
+    100106: Wrist_L
+    100108: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: BackToe1_L
+    400006: BackToe1_R
+    400008: BackToe2_L
+    400010: BackToe2_R
+    400012: BackToe3_L
+    400014: BackToe3_R
+    400016: Chest_M
+    400018: DeformationSystem
+    400020: Elbow_L
+    400022: Elbow_R
+    400024: Eye_L
+    400026: Eye_R
+    400028: EyeEnd_L
+    400030: EyeEnd_R
+    400032: Geometry
+    400034: Head_M
+    400036: HeadEnd_M
+    400038: Hip_L
+    400040: Hip_R
+    400042: IndexFinger1_L
+    400044: IndexFinger1_R
+    400046: IndexFinger2_L
+    400048: IndexFinger2_R
+    400050: Jaw_M
+    400052: JawEnd_M
+    400054: Knee_L
+    400056: Knee_R
+    400058: Main
+    400060: Neck_M
+    400062: Root_M
+    400064: Scapula_L
+    400066: Scapula_R
+    400068: Shoulder_L
+    400070: Shoulder_R
+    400072: Spine1_M
+    400074: Tail1_M
+    400076: Tail2_M
+    400078: Tail3_M
+    400080: Tail3ASide_L
+    400082: Tail3ASide_R
+    400084: Tail3End_M
+    400086: Tail3Side_L
+    400088: Tail3Side_R
+    400090: Tail3SideEnd_L
+    400092: Tail3SideEnd_R
+    400094: Toes_L
+    400096: Toes_R
+    400098: ToesEnd_L
+    400100: ToesEnd_R
+    400102: //RootNode
+    400104: tucan_rig
+    400106: Wrist_L
+    400108: Wrist_R
+    2100000: tucan
+    4300000: tucan_rig
+    9500000: //RootNode
+    13700000: tucan_rig
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
