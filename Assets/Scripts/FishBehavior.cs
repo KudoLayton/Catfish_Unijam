@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FishBehavior : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class FishBehavior : MonoBehaviour
     private const float EPSILON = 0.01f;
     private bool _prevInWater;
 
+    public UnityEvent onEnterWater;
+    public UnityEvent onLeaveWater;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -19,8 +23,8 @@ public class FishBehavior : MonoBehaviour
     {
         bool currInWater = IsInWater();
 
-        if (_prevInWater && !currInWater) StartInAir();
-        else if (!_prevInWater && currInWater) StartInWater();
+        if (_prevInWater && !currInWater) LeaveWater();
+        else if (!_prevInWater && currInWater) EnterWater();
         
         Rotate();
         
@@ -47,16 +51,18 @@ public class FishBehavior : MonoBehaviour
         return transform.position.y < 0;
     }
 
-    private void StartInAir()
+    private void LeaveWater()
     {
         _rigidbody.useGravity = true;
         _rigidbody.drag = 0;
+        onLeaveWater.Invoke();
     }
 
-    private void StartInWater()
+    private void EnterWater()
     {
         _rigidbody.useGravity = false;
         _rigidbody.drag = waterDrag;
+        onEnterWater.Invoke();
     }
 
     private void Rotate()
