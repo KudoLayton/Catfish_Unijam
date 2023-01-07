@@ -11,7 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Template.unity
     guid: 8278591e372155348b15ce32feff01da
+  - enabled: 0
+    path: Assets/Scenes/CameraModifiedTemplate.unity
+    guid: 67e0e81f9684f449db45278815de387d
+  - enabled: 1
+    path: Assets/Scenes/GyroTopViewTestScene.unity
+    guid: 38183f3a11aee45028320cb6f472d784
   m_configObjects: {}

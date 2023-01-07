@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Sample_Ground
+  m_Name: M_Sample_Leaf
   m_Shader: {fileID: -6465566751694194690, guid: 5d85e97b2ba1242fe97afba98dca9368, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -94,7 +94,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoiseMultScale: -0.3
+    - _NoiseMultScale: -0.12
     - _NoiseScale: 0.4
     - _NoisyScale: 500
     - _OcclusionStrength: 1
@@ -103,7 +103,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SampleGI: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.62
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -111,7 +111,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.6431373, g: 0.3373342, b: 0.08235294, a: 1}
+    - _BaseColor: {r: 0.383, g: 0.6415094, b: 0.08170167, a: 1}
     - _Color: {r: 0.40399998, g: 0.25498393, b: 0.20113915, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

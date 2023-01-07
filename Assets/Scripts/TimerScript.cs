@@ -16,7 +16,7 @@ public class TimerScript : MonoBehaviour
     }
 
     public long timerStop()
-    {
+    {   
         timerSwitch = false;
         return tick;
     }
