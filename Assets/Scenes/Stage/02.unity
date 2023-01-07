@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1620004967}
-  m_IndirectSpecularColor: {r: 0.28740507, g: 0.58149207, b: 0.8081353, a: 1}
+  m_IndirectSpecularColor: {r: 0.2871094, g: 0.5806207, b: 0.80557877, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -410,6 +410,10 @@ PrefabInstance:
       propertyPath: UseFixedTimestep
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8442406184425578437, guid: df61222243590c446b87d852c9f3e3cc, type: 3}
+      propertyPath: ReflectionProbeBRP
+      value: 
+      objectReference: {fileID: 2147170284}
     - target: {fileID: 8442406184425578437, guid: df61222243590c446b87d852c9f3e3cc, type: 3}
       propertyPath: BakedInitialStateAsset
       value: 
