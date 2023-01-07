@@ -9,7 +9,7 @@ public class FishRotator : MonoBehaviour
     [SerializeField] private GameObject plane;
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = transform.parent.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
