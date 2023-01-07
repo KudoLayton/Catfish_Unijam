@@ -129,15 +129,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe23ec2d06949bc4d8cf36c93f656ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RayMarchingResolutionDownscale: 0.5
+  RayMarchingResolutionDownscale: 0.2
   RefractionBounces: 0
   DisableRaymarch: 0
   UnderwaterRender: 0
   MaxLiquidMeshSize: 1
-  VertexOptimizationIterations: 5
-  MeshOptimizationIterations: 2
-  VertexOptimizationStep: 0.82
-  MeshOptimizationStep: 0.91
+  VertexOptimizationIterations: 3
+  MeshOptimizationIterations: 1
+  VertexOptimizationStep: 0.26
+  MeshOptimizationStep: 0.41
   DualContourIsoSurfaceLevel: 0.025
   IsoSurfaceLevel: 0.36
   RayMarchIsoSurface: 0.65
