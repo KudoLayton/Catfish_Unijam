@@ -105,13 +105,13 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaveHeight: 0.07
+    - _WaveHeight: 0.5
     - _WaveSpeed: 0.1
-    - _WaveStrength: 5
+    - _WaveStrength: 4
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.5486828, g: 0.6960349, b: 0.8490566, a: 0.5254902}
+    - _BaseColor: {r: 0.54868275, g: 0.69603485, b: 0.8490566, a: 0.44705883}
     - _Color: {r: 0.40399998, g: 0.25498393, b: 0.20113915, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
