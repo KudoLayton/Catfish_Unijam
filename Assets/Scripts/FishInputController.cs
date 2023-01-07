@@ -12,7 +12,7 @@ public class FishInputController : MonoBehaviour
         _joystickController = joystick.GetComponent<JoystickController>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         _fishBehavior.Move(new Vector3(_joystickController.Horizontal, _joystickController.Vertical));
         // TODO: Add Jump

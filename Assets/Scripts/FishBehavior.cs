@@ -19,7 +19,7 @@ public class FishBehavior : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         bool currInWater = IsInWater();
 
