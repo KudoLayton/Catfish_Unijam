@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [System.Serializable]
     public struct FishType
     {
-        public string color;
-        public int score;
-        public float probability;
+        string color;
+        int score;
+        float probability;
         public FishType(string color, int score, float probability)
         {
             this.color = color;
@@ -32,7 +31,6 @@ public class GameManager : MonoBehaviour
             return this.probability;
         }
     }
-    [System.Serializable]
     public struct GameSetting
     {
         public int time;
@@ -44,23 +42,22 @@ public class GameManager : MonoBehaviour
             this.fishtypes = fishtypes;
         }
     }
-    int fishSlotNum = 6;
-    int catSlotNum = 6;
-    [SerializeField] int fishInitNum = 3;
-    [SerializeField] int catInitNum = 4;
-    [SerializeField] float fishCoolTime = 2.0f;
-    [SerializeField] float catCoolTime = 3.0f;
-    [SerializeField] GameSetting currentGameSet;
-    [SerializeField] GameObject fishPrefab;
-    [SerializeField] GameObject catPrefab;
-    bool[] fishSlot;
-    bool[] catSlot;
-    int score;
     
-    long gameTick;
+    [SerializeField] GameSetting currentGameSet;
+    [SerializeField] int fishSlotNum;
+    [SerializeField] int catSlotNum;
+    [SerializeField] int fishInitNum;
+    [SerializeField] int catInitNum;
+    [SerializeField] float fishCoolTime;
+    [SerializeField] float catCoolTime;
+    GameObject[] fishSlot;
+    GameObject[] catSlot;
+
+    int score;
+
     long fishTick, catTick;
-    long gameMaxTick;
     long fishMaxTick, catMaxTick;
+
     int[] fishHuntCount;
 
     // 0 ~ (size - 1) 사이의 난수열을 반환합니다. 1번씩 등장합니다.
@@ -94,10 +91,8 @@ public class GameManager : MonoBehaviour
         score = 0;
         fishMaxTick = (long)(fishCoolTime / (Time.fixedDeltaTime));
         catMaxTick = (long)(catCoolTime / (Time.fixedDeltaTime));
-        gameMaxTick = (long)(currentGameSet.time / (Time.fixedDeltaTime));
         fishTick = fishMaxTick + 1;
         catTick = catMaxTick + 1;
-        gameTick = 0;
     }
     
     
@@ -106,6 +101,15 @@ public class GameManager : MonoBehaviour
     {
         // 엔딩 연출
         // Hunt Count 전송 (score도 대조용으로 전송)
+    }
+
+    
+    // 물고기 방생 시 호출할 메소드입니다.
+    public GameObject LeaveFishSlot(int n)
+    {
+        GameObject leaveFish = fishSlot[n];
+        fishSlot[n] = null;
+        return leaveFish;
     }
 
     
@@ -123,38 +127,17 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-
-        // 고양이, 물고기 붙고
-        // 애니메이션 : 날려버리기
-        // 빈 자리에 짤방
+        Object.Destroy(fish);
+        fish = null;
+        Object.Destroy(cat);
+        cat = null;
     }
 
     
-    // n번 Fish Slot에 물고기를 새로 채웁니다. 확률에 기반합니다.
-    private void AddFishSlot(int n)
+    // n번 Fish Slot에 물고기를 새로 채웁니다. 확률에 기반합니다. 생성에 실패한 경우 -1을 return합니다.
+    private int AddFishSlot(int n)
     {
-        Vector3 genPosition = new Vector3(-4.5f + 1.8f * n, 3.75f, 12.0f);
-        GameObject genFish = Instantiate(fishPrefab, genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
-        float sumProb = 0.0f;
-        float rand = Random.Range(0.0f, 1.0f);
-        string genColor = "";
-        foreach (FishType fishdefs in currentGameSet.fishtypes)
-        {
-            if (sumProb <= rand && rand <= sumProb + fishdefs.GetProbability())
-            { //probability hits
-                genColor = fishdefs.GetColor();
-                break;
-            }
-            else
-            {
-                sumProb += fishdefs.GetProbability();
-            }
-        }
-
-        genFish.GetComponent<FishBehavior>().SetColor(genColor);
-        genFish.GetComponent<FishBehavior>().SetSlot(n);
-        genFish.GetComponent<FishBehavior>().EnterJellyfish();
-        fishSlot[n] = true;
+        return 0;
     }
 
     
@@ -165,10 +148,10 @@ public class GameManager : MonoBehaviour
     }
 
     
-    // n번 Cat Slot에 고양이를 새로 채웁니다.
-    private void AddCatSlot(int n)
+    // n번 Cat Slot에 고양이를 새로 채웁니다. 생성에 실패한 경우 -1을 return합니다.
+    private int AddCatSlot(int n)
     {
-
+        return 0;
     }
 
     
@@ -259,11 +242,6 @@ public class GameManager : MonoBehaviour
                 }
             }
             catTick++;
-        }
-        if (gameTick == gameMaxTick) {
-            GameOver();
-        } else {
-            gameTick++;
         }
     }
 }
