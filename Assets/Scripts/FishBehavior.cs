@@ -1,10 +1,10 @@
-using System;
 using UnityEngine;
 
 
 public class FishBehavior : MonoBehaviour
 {
     public string color;
+    public int slot;
     private bool _isExiting;
     private Vector3 _exitVelocity;
     private Vector3 _beforeExitVelocity;
@@ -19,6 +19,12 @@ public class FishBehavior : MonoBehaviour
     {
         this.color = color;
     }
+
+    public void SetSlot(int slot)
+    {
+        this.slot = slot;
+    }
+
 
     private void Start()
     {
