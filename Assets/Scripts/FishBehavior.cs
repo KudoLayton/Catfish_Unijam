@@ -5,7 +5,7 @@ public class FishBehavior : MonoBehaviour
 {
     public string color;
     public int slot;
-    private bool _isExiting;
+    private bool _isMarimoExiting;
     private Vector3 _exitVelocity;
     private Vector3 _beforeExitVelocity;
     private float _exitTime;
@@ -28,7 +28,7 @@ public class FishBehavior : MonoBehaviour
 
     private void Start()
     {
-        _isExiting = false;
+        _isMarimoExiting = false;
         _rigidbody = GetComponent<Rigidbody>();
         _quitEffectObject = transform.GetChild(1).gameObject;
         _quitEffectObject.transform.localScale = Vector3.zero;
@@ -36,7 +36,7 @@ public class FishBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (_isExiting)
+        if (_isMarimoExiting)
         {
             var progress = (Time.time - _exitTime) / exitTurnTime;
             if (progress < 0.5f) _quitEffectObject.transform.localScale = Vector3.one * (progress * 2);
@@ -45,6 +45,11 @@ public class FishBehavior : MonoBehaviour
             _rigidbody.velocity = progress > 1 ? _exitVelocity : Vector3.Lerp(_beforeExitVelocity, _exitVelocity, progress);
             if (Mathf.Abs(transform.position.x) > exitDistance)
                 gameObject.SetActive(false);
+        }
+
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -70,7 +75,7 @@ public class FishBehavior : MonoBehaviour
             _exitVelocity = new Vector3(exitSpeed, 0, 0);
         _beforeExitVelocity = _rigidbody.velocity;
         _exitTime = Time.time;
-        _isExiting = true;
+        _isMarimoExiting = true;
     }
 
     void OnTriggerStay(Collider triggerobj)
