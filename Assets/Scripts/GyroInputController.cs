@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GyroInputController : MonoBehaviour
 {
     private float _angle;
+    private float _prevAngle;
     [SerializeField] private float MinimumTilt;
 
     void Start()
@@ -13,6 +15,16 @@ public class GyroInputController : MonoBehaviour
     }
 
     void Update()
+    {
+        UpdateAngle();
+        var angleDiff = _angle - _prevAngle;
+        if (angleDiff > 180) angleDiff -= 360;
+        if (angleDiff < -180) angleDiff += 360;
+        transform.Rotate(Vector3.right, angleDiff);
+        _prevAngle = _angle;
+    }
+
+    private void UpdateAngle()
     {
 #if UNITY_EDITOR
         var angleDelta = (Input.GetKey("d") ? 1 : 0) - (Input.GetKey("a") ? 1 : 0);
@@ -26,11 +38,5 @@ public class GyroInputController : MonoBehaviour
             _angle = -Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
         }
 #endif
-        // Debug.Log(_angle);
-    }
-
-    public float GetAngle()
-    {
-        return _angle;
     }
 }
