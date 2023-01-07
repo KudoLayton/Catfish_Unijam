@@ -56,6 +56,7 @@ public class FishBehavior : MonoBehaviour
     public void LeaveJellyfish()
     {
         GetComponent<Rigidbody>().isKinematic = false;
+        GameManager.Instance.DeleteFishSlot(slot);
     }
 
     public void EatMarimo()
