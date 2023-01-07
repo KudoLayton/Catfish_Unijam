@@ -68,9 +68,9 @@ public class FishBehavior : MonoBehaviour
         var velocity = _rigidbody.velocity;
         if (velocity.sqrMagnitude >= EPSILON)
             transform.rotation = Quaternion.LookRotation(velocity);
-        Vector3 fixAxis = transform.rotation.eulerAngles;
-        fixAxis.y = 0;
-        fixAxis.z = 0;
-        transform.rotation = Quaternion.Euler(fixAxis);
+        //Vector3 fixAxis = transform.rotation.eulerAngles;
+        //fixAxis.y = 0;
+        //fixAxis.z = 0;
+        //transform.rotation = Quaternion.Euler(fixAxis);
     }
 }

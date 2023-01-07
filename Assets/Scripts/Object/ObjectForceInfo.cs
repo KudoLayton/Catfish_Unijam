@@ -14,12 +14,14 @@ namespace com.zibra.liquid.Manipulators
         {
             force = forceData.Force;
             torque = forceData.Torque;
+            float size = force.magnitude + torque.magnitude;
+            Debug.Log(size);
         }
 
         public bool IsTouchWater()
         {
             float size = force.magnitude + torque.magnitude;
-            return (size < 0.1 ? false : true);
+            return (size < 0.001 ? false : true);
         }
     
     }
