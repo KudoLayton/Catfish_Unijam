@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 namespace com.zibra.liquid.Manipulators
 {
-    public class ObejctForceInfo : MonoBehaviour
+    public class ObjectForceInfo : MonoBehaviour
     {
 
         Vector3 force = Vector3.zero;

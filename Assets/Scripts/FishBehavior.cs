@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+
+using com.zibra.liquid.Manipulators;
 public class FishBehavior : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float waterDrag;
     [SerializeField] private float jumpSpeed;
+    [SerializeField] private GameObject objectParent;
     private Rigidbody _rigidbody;
     private const float EPSILON = 0.01f;
     private bool _prevInWater;
@@ -42,8 +45,8 @@ public class FishBehavior : MonoBehaviour
 
     private bool IsInWater()
     {
-        // TODO
-        return transform.position.y < 0;
+        bool temp = objectParent.GetComponent<ObjectForceInfo>().IsTouchWater();
+        return temp;
     }
 
     private void LeaveWater()
@@ -65,5 +68,9 @@ public class FishBehavior : MonoBehaviour
         var velocity = _rigidbody.velocity;
         if (velocity.sqrMagnitude >= EPSILON)
             transform.rotation = Quaternion.LookRotation(velocity);
+        Vector3 fixAxis = transform.rotation.eulerAngles;
+        fixAxis.y = 0;
+        fixAxis.z = 0;
+        transform.rotation = Quaternion.Euler(fixAxis);
     }
 }

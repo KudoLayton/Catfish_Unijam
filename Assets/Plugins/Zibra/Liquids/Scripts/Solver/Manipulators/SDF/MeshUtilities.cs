@@ -54,6 +54,7 @@ namespace com.zibra.liquid.Utilities
             }
 
 #if ZIBRA_LIQUID_PRO_VERSION
+            Debug.Log("PRO VERSION");
             if (currentRenderer != null && currentRenderer is SkinnedMeshRenderer skinnedMeshRenderer)
             {
                 var mesh = new Mesh();
