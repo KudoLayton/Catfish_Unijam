@@ -3,10 +3,9 @@ using UnityEngine.Events;
 
 public class FishBehavior : MonoBehaviour
 {
-    [SerializeField] private float maxForce;
+    [SerializeField] private float moveSpeed;
     [SerializeField] private float waterDrag;
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float maxSpeed;
+    [SerializeField] private float jumpSpeed;
     private Rigidbody _rigidbody;
     private const float EPSILON = 0.01f;
     private bool _prevInWater;
@@ -25,23 +24,19 @@ public class FishBehavior : MonoBehaviour
 
         if (_prevInWater && !currInWater) LeaveWater();
         else if (!_prevInWater && currInWater) EnterWater();
-        
+
         Rotate();
-        
+
         _prevInWater = currInWater;
     }
-    
-    public void Move(Vector3 direction)
-    {
-        if (IsInWater()) _rigidbody.AddForce(direction * maxForce);
-    }
 
-    public void Jump()
+    public void SetMovement(Vector3 normalizedVelocity, bool jumping)
     {
         if (IsInWater())
         {
-            _rigidbody.AddForce(Vector3.up * jumpForce);
-            _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
+            var velocity = normalizedVelocity == Vector3.zero ? _rigidbody.velocity : normalizedVelocity * moveSpeed;
+            if (jumping) velocity.y = jumpSpeed;
+            _rigidbody.velocity = velocity;
         }
     }
 
@@ -70,6 +65,5 @@ public class FishBehavior : MonoBehaviour
         var velocity = _rigidbody.velocity;
         if (velocity.sqrMagnitude >= EPSILON)
             transform.rotation = Quaternion.LookRotation(velocity);
-        
     }
 }

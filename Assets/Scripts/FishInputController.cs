@@ -14,18 +14,21 @@ public class FishInputController : MonoBehaviour
 
     void FixedUpdate()
     {
-        _fishBehavior.Move(new Vector3(_joystickController.Horizontal, _joystickController.Vertical));
-        // TODO: Add Jump
+        var velocity = new Vector3(_joystickController.Horizontal, _joystickController.Vertical);
+        var jump = false; // TODO
 
 #if UNITY_EDITOR
-        var horizontal = (Input.GetKey("right") ? 1 : 0) + (Input.GetKey("left") ? -1 : 0);
-        var vertical = (Input.GetKey("up") ? 1 : 0) + (Input.GetKey("down") ? -1 : 0);
-        var moveDirection = new Vector3(horizontal, vertical).normalized;
+        if (velocity == Vector3.zero)
+        {
+            velocity = new Vector3(
+                (Input.GetKey("right") ? 1 : 0) + (Input.GetKey("left") ? -1 : 0),
+                (Input.GetKey("up") ? 1 : 0) + (Input.GetKey("down") ? -1 : 0)
+            );
+        }
 
-        var jump = Input.GetKey("space");
-
-        _fishBehavior.Move(moveDirection);
-        if (jump) _fishBehavior.Jump();
+        jump = Input.GetKey("space");
 #endif
+
+        _fishBehavior.SetMovement(velocity, jump);
     }
 }
