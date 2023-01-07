@@ -634,6 +634,7 @@ MonoBehaviour:
   moveSpeed: 3
   waterDrag: 5
   jumpSpeed: 10
+  objectParent: {fileID: 0}
   onEnterWater:
     m_PersistentCalls:
       m_Calls: []
