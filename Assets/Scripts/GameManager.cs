@@ -195,7 +195,7 @@ public class GameManager : MonoBehaviour
         GameObject genFish = Instantiate(currentGameSet.GetPrefab(genColor), genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
         genFish.GetComponent<FishBehavior>().SetSlot(n);
-        genFish.GetComponent<FishBehavior>().EnterJellyfish();
+        genFish.GetComponent<FishBehavior>().GetComponent<Rigidbody>().isKinematic = true;
         fishSlot[n] = true;
         genFish.transform.SetParent(Map.transform);
     }
