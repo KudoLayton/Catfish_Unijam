@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
         Debug.Log ("잡았다");
         GameObject PopupManger = GameObject.FindGameObjectWithTag("CatPopup");
         PopupManger?.GetComponent<CatPopupManager>().ShowCatPopup(cat);
-
+        GetComponent<AudioSource>().Play();
         // 고양이, 물고기 붙고
         // 애니메이션 : 날려버리기
         // 빈 자리에 짤방

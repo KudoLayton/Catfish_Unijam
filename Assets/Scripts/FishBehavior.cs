@@ -75,6 +75,7 @@ public class FishBehavior : MonoBehaviour
         _beforeExitVelocity = _rigidbody.velocity;
         _exitTime = Time.time;
         _isMarimoExiting = true;
+        GetComponent<AudioSource>()?.Play();
     }
 
     void OnTriggerStay(Collider triggerobj)

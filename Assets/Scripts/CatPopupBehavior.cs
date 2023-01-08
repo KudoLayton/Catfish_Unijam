@@ -20,7 +20,9 @@ public class CatPopupBehavior : MonoBehaviour
         var progress = (Time.time - _startTime) / _duration;
         if (progress < 0.3f)
         {
-            transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, progress / 0.3f);
+            float parameter = progress / 0.3f;
+            parameter *= parameter;
+            transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, parameter);
         }
         else if (progress < 0.7f)
         {
