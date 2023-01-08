@@ -20,6 +20,8 @@ public class FishRotator : MonoBehaviour
         Vector3 planeNormal = plane.transform.localRotation * Vector3.up;
         Vector3 lookFor = Vector3.ProjectOnPlane(_rigidbody.velocity, planeNormal);
         lookFor = Vector3.Normalize(lookFor);
+        if (lookFor == Vector3.zero || planeNormal == Vector3.zero)
+            return;
         transform.rotation = Quaternion.LookRotation(lookFor, planeNormal);
     }
 }
