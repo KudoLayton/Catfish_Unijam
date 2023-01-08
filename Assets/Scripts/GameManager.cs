@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -94,7 +95,16 @@ public class GameManager : MonoBehaviour
     bool[] catSlot = new bool[6];
     int score;
     public int Score => score;
+
+    public UnityEvent[] launchFish = new UnityEvent[6];
     
+
+
+    public UnityEvent EventFishGet(int slot)
+    {
+        return launchFish[slot];
+    }
+
     long gameTick;
     long fishTick, catTick;
     long gameMaxTick;
@@ -344,15 +354,11 @@ public class GameManager : MonoBehaviour
             RaycastHit[] raycasts = Physics.RaycastAll(ray, Mathf.Infinity);
             foreach (RaycastHit hitSlot in raycasts)
             {
-                Debug.Log(hitSlot.collider.transform.gameObject.name);
-                if (hitSlot.collider.transform.gameObject.tag == "Fish")
+                if (hitSlot.collider.transform.gameObject.tag == "Touch")
                 {
-                    Debug.Log("이 안에는 들어왔음?");
-                    GameObject fish = hitSlot.collider.transform.gameObject;
-                    float x = fish.transform.position.x;
-                    int slot = (int)((x + 4.5f) * 5.0f / 9.0f); 
-                    fish.GetComponent<Rigidbody>().isKinematic = false;
-                    DeleteFishSlot(slot);
+                    GameObject touch = hitSlot.collider.transform.gameObject;
+                    int slot = touch.name[0] - '0';
+                    launchFish[slot].Invoke();
                 }
                 
             }   
@@ -369,7 +375,6 @@ public class GameManager : MonoBehaviour
         
         if (!IsFullFishSlot())
         {
-            Debug.Log("Fish is not Full");
             if (fishTick > fishMaxTick)
             {
                 fillFish();

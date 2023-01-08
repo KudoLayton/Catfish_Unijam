@@ -11,6 +11,8 @@ TagManager:
   - Cat
   - Fish
   - CatPopup
+  - Touch
+  - headTouch
   layers:
   - Default
   - TransparentFX

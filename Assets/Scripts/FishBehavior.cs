@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 
 public class FishBehavior : MonoBehaviour
@@ -15,6 +16,8 @@ public class FishBehavior : MonoBehaviour
     [SerializeField] private float exitDistance = 8;
     [SerializeField] private float exitTurnTime = 1;
 
+
+    public UnityEvent launch;
     public void SetColor(string color)
     {
         this.color = color;
@@ -23,6 +26,8 @@ public class FishBehavior : MonoBehaviour
     public void SetSlot(int slot)
     {
         this.slot = slot;
+        launch = GameManager.Instance.EventFishGet(slot);
+        launch.AddListener(leaveFish);
     }
 
 
@@ -99,6 +104,11 @@ public class FishBehavior : MonoBehaviour
             GameObject catObj = triggeredObj;
             GameManager.Instance.CatchCat(fishObj, catObj);
         }
+    }
+
+    void leaveFish() {
+        GameManager.Instance.DeleteFishSlot(slot);
+        GetComponent<Rigidbody>().isKinematic = false;
     }
 
     void RemoveFish()
