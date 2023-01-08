@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2379110786638699005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.095, y: 0, z: -0.4477}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,8 +46,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.16976193, y: 16.04, z: 0.1}
-  m_Center: {x: 0.08, y: -1.38, z: -0.06}
+  m_Size: {x: 6.7085156, y: 16.04, z: 4.720605}
+  m_Center: {x: 3.4595182, y: 0, z: 0}
 --- !u!114 &8999365821447962816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +62,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceEff: 100
   force: {x: 1, y: 0, z: 0}
+  coolTime: 0
+  ActiveTime: 0
+  initialDelayTime: 0
 --- !u!198 &380250209
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -79,7 +82,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -696,7 +699,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0.08, y: 0, z: -3.95}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 90, z: 0}
     m_Scale: {x: 0.53, y: 1, z: 1}
     placementMode: 0
