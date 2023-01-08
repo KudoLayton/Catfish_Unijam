@@ -90,6 +90,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] catPrefabs;
     [SerializeField] private GameObject Map;
 
+    public GameSetting Settings => currentGameSet;
+
     bool[] fishSlot = new bool[6];
     bool[] catSlot = new bool[6];
     int score;
@@ -100,6 +102,7 @@ public class GameManager : MonoBehaviour
     long gameMaxTick;
     long fishMaxTick, catMaxTick;
     Dictionary<string, int> fishHuntCount = new Dictionary<string, int>();
+    public int GetScore(string color) => fishHuntCount[color];
 
     // 0 ~ (size - 1) 사이의 난수열을 반환합니다. 1번씩 등장합니다.
     public int[] randomArray(int size)
