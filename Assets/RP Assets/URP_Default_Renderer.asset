@@ -32,7 +32,8 @@ MonoBehaviour:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
   m_RendererFeatures:
   - {fileID: -1703478018825876095}
-  m_RendererFeatureMap: 818d326dc4075ce8
+  - {fileID: 2300565806221266193}
+  m_RendererFeatureMap: 818d326dc4075ce8118d3a6e6940ed1f
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -70,3 +71,32 @@ MonoBehaviour:
   m_ClusteredRendering: 0
   m_TileSize: 32
   m_IntermediateTextureMode: 1
+--- !u!114 &1271438655483424086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f28674992a4423482725e653aa1336, type: 3}
+  m_Name: ConcentrationLineEffectRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+--- !u!114 &2300565806221266193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb40c57bb8834981b72174636ff65ea, type: 3}
+  m_Name: CustomPostprocessRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  _settings:
+    renderTag: CustomPostprocessRender
+    passEvent: 550
