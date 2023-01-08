@@ -208,7 +208,7 @@ public class GameManager : MonoBehaviour
         genFish.transform.tag = "Fish";
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
         genFish.GetComponent<FishBehavior>().SetSlot(n);
-        genFish.GetComponent<FishBehavior>().EnterJellyfish();
+        genFish.GetComponent<FishBehavior>().GetComponent<Rigidbody>().isKinematic = true;
         fishSlot[n] = true;
         genFish.transform.SetParent(Map.transform);
     }
