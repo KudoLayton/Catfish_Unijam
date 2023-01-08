@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -169,6 +170,7 @@ public class GameManager : MonoBehaviour
     {
         // 엔딩 연출
         // Hunt Count 전송 (score도 대조용으로 전송)
+        SceneManager.LoadScene(2);
     }
 
     
