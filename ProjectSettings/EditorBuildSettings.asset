@@ -15,9 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Template.unity
     guid: 8278591e372155348b15ce32feff01da
   - enabled: 0
-    path: Assets/Scenes/CameraModifiedTemplate.unity
-    guid: 67e0e81f9684f449db45278815de387d
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/GyroTopViewTestScene.unity
     guid: 38183f3a11aee45028320cb6f472d784
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: d216b8a60dbfbc944bce236b45022e8d
+  - enabled: 1
+    path: Assets/Scenes/NewStage01.unity
+    guid: 38e1f2f3876e2d849b0df747c2ffaf4e
   m_configObjects: {}
