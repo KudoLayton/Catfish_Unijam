@@ -118,7 +118,16 @@ public class GameManager : MonoBehaviour
     
     // 게임이 시작되면 호출할 메소드입니다.
     public void GameStart()
-    {
+    {   
+        for (int i = 0; i < fishSlotNum; i++)
+        {
+            fishSlot[i] = false;
+        }
+
+        for (int i = 0; i < catSlotNum; i++)
+        {
+            catSlot[i] = false;
+        }
         int[] fishIds = randomArray(fishSlotNum);
         int[] catIds = randomArray(catSlotNum);
         for (int i = 0; i < fishInitNum; i++) {
@@ -194,6 +203,7 @@ public class GameManager : MonoBehaviour
             }
         }
         GameObject genFish = Instantiate(currentGameSet.GetPrefab(genColor), genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        genFish.transform.SetParent(Map.transform);
         genFish.tag = "Fish";
         genFish.transform.tag = "Fish";
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
@@ -231,6 +241,7 @@ public class GameManager : MonoBehaviour
             }
         }
         GameObject genCat = Instantiate(catPrefabs[i], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        genCat.transform.SetParent(Map.transform);
         genCat.tag = "Cat";
         genCat.transform.tag = "Cat";
         catSlot[n] = true;
@@ -254,7 +265,7 @@ public class GameManager : MonoBehaviour
             if (GetFishSlot(i)) numFill++;
         }
 
-        return numFill == fishSlotNum ? true : false;
+        return ((numFill == fishSlotNum) ? true : false);
     }
 
     
@@ -267,7 +278,7 @@ public class GameManager : MonoBehaviour
             if (GetCatSlot(i)) numFill++;
         }
 
-        return numFill == catSlotNum ? true : false;
+        return ((numFill == catSlotNum) ? true : false);
     }
 
     
@@ -305,23 +316,25 @@ public class GameManager : MonoBehaviour
     // Update
     void FixedUpdate()
     {
-        if (fishTick <= fishMaxTick)
+        
+        if (!IsFullFishSlot())
         {
-            if (fishTick == fishMaxTick) {
+            Debug.Log("Fish is not Full");
+            if (fishTick > fishMaxTick)
+            {
                 fillFish();
-                if (!IsFullFishSlot()) {
-                    fishTick = -1;
-                }
+                fishTick = 0;
             }
+            
             fishTick++;
         }
-        if (catTick <= catMaxTick)
+
+        if (!IsFullCatSlot())
         {
-            if (catTick == catMaxTick) {
+            if (catTick > catMaxTick)
+            {
                 fillCat();
-                if (!IsFullCatSlot()) {
-                    catTick = -1;
-                }
+                catTick = 0;
             }
             catTick++;
         }
