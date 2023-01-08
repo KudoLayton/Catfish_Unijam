@@ -44,12 +44,12 @@ public class FishBehavior : MonoBehaviour
             else _quitEffectObject.transform.localScale = Vector3.zero;
             _rigidbody.velocity = progress > 1 ? _exitVelocity : Vector3.Lerp(_beforeExitVelocity, _exitVelocity, progress);
             if (Mathf.Abs(transform.position.x) > exitDistance)
-                gameObject.SetActive(false);
+                RemoveFish();
         }
 
         if (transform.position.y < -10)
         {
-            Destroy(gameObject);
+            RemoveFish();
         }
     }
 
@@ -61,7 +61,6 @@ public class FishBehavior : MonoBehaviour
     public void LeaveJellyfish()
     {
         GetComponent<Rigidbody>().isKinematic = false;
-        GameManager.Instance.DeleteFishSlot(slot);
     }
 
     public void EatMarimo()
@@ -95,5 +94,11 @@ public class FishBehavior : MonoBehaviour
             GameObject catObj = fieldObject;
             GameManager.Instance.CatchCat(fishObj, catObj);
         }
+    }
+
+    void RemoveFish()
+    {
+        GameManager.Instance.DeleteFishSlot(slot);
+        Destroy(gameObject);
     }
 }
