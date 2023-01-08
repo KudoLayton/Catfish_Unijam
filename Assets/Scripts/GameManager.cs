@@ -30,14 +30,6 @@ public class GameManager : MonoBehaviour
         GameStart();
     }
 
-    int StrToInt(string x) {
-        int outValue = 0;
-        for (int i = 0; i < x.Length; i++)
-        {
-            outValue = outValue * 10 + (x[i] - '0');
-        }       
-        return outValue;
-    }
 
 
     [System.Serializable]
@@ -100,7 +92,6 @@ public class GameManager : MonoBehaviour
 
     bool[] fishSlot = new bool[6];
     bool[] catSlot = new bool[6];
-    GameObject[] fishObjSlot = new GameObject[6];
     int score;
     public int Score => score;
     
@@ -194,7 +185,6 @@ public class GameManager : MonoBehaviour
 
     public void DeleteFishSlot(int n) {
         fishSlot[n] = false;
-        fishObjSlot[n] = null;
     }
 
     public void DeleteCatSlot(int n) {
@@ -229,7 +219,6 @@ public class GameManager : MonoBehaviour
         genFish.GetComponent<FishBehavior>().GetComponent<Rigidbody>().isKinematic = true;
         fishSlot[n] = true;
         genFish.transform.SetParent(Map.transform);
-        fishObjSlot[n] = genFish;
     }
 
     
@@ -351,16 +340,21 @@ public class GameManager : MonoBehaviour
 #endif
 
         if (input) {
-            RaycastHit hitSlot;
             Ray ray = Camera.main.ScreenPointToRay(touchPosition);
-            
-            if (Physics.Raycast(ray, out hitSlot, Mathf.Infinity))
+            RaycastHit[] raycasts = Physics.RaycastAll(ray, Mathf.Infinity);
+            foreach (RaycastHit hitSlot in raycasts)
             {
-                int slot = (int)(hitSlot.point.x + 4.5 * 5 / 9);
-                slot = (slot >= 6 ? 5 : (slot < 0 ? 0 : slot));
-                GameObject fish = fishObjSlot[slot];
-                fish.GetComponent<Rigidbody>().isKinematic = false;
-                DeleteFishSlot(slot);
+                Debug.Log(hitSlot.collider.transform.gameObject.name);
+                if (hitSlot.collider.transform.gameObject.tag == "Fish")
+                {
+                    Debug.Log("이 안에는 들어왔음?");
+                    GameObject fish = hitSlot.collider.transform.gameObject;
+                    float x = fish.transform.position.x;
+                    int slot = (int)((x + 4.5f) * 5.0f / 9.0f); 
+                    fish.GetComponent<Rigidbody>().isKinematic = false;
+                    DeleteFishSlot(slot);
+                }
+                
             }   
         }
         
