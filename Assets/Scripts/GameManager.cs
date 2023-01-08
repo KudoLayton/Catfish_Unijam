@@ -161,6 +161,8 @@ public class GameManager : MonoBehaviour
             }
         }
         Debug.Log ("잡았다");
+        GameObject PopupManger = GameObject.FindGameObjectWithTag("CatPopup");
+        PopupManger?.GetComponent<CatPopupManager>().ShowCatPopup(cat);
 
         // 고양이, 물고기 붙고
         // 애니메이션 : 날려버리기
