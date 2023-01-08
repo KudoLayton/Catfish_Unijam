@@ -194,8 +194,8 @@ public class GameManager : MonoBehaviour
         float x = cat.transform.position.x;
         int slot = (int)((x + 4.5f) / 9.0f * 5.0f);
         DeleteCatSlot(slot);
-        Destroy(cat);
-        Destroy(fish);
+        Destroy(cat, 2.0f);
+        Destroy(fish, 2.0f);
         // 고양이, 물고기 붙고
         // 애니메이션 : 날려버리기
         // 빈 자리에 짤방
