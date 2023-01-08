@@ -92,6 +92,7 @@ public class GameManager : MonoBehaviour
     bool[] fishSlot = new bool[6];
     bool[] catSlot = new bool[6];
     int score;
+    public int Score => score;
     
     long gameTick;
     long fishTick, catTick;
