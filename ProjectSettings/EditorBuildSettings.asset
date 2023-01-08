@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GyroTopViewTestScene.unity
     guid: 38183f3a11aee45028320cb6f472d784
   - enabled: 1
-    path: Assets/Scenes/NewStage01.unity
-    guid: 38e1f2f3876e2d849b0df747c2ffaf4e
-  - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: d216b8a60dbfbc944bce236b45022e8d
+  - enabled: 1
+    path: Assets/Scenes/NewStage01.unity
+    guid: 38e1f2f3876e2d849b0df747c2ffaf4e
   m_configObjects: {}
