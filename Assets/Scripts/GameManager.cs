@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void awake()
+    void Awake()
     {
         if (instance)
         {
@@ -159,6 +159,7 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+        Debug.Log ("잡았다");
 
         // 고양이, 물고기 붙고
         // 애니메이션 : 날려버리기
@@ -193,6 +194,8 @@ public class GameManager : MonoBehaviour
             }
         }
         GameObject genFish = Instantiate(currentGameSet.GetPrefab(genColor), genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        genFish.tag = "Fish";
+        genFish.transform.tag = "Fish";
         genFish.GetComponent<FishBehavior>().SetColor(genColor);
         genFish.GetComponent<FishBehavior>().SetSlot(n);
         genFish.GetComponent<FishBehavior>().EnterJellyfish();
@@ -228,6 +231,8 @@ public class GameManager : MonoBehaviour
             }
         }
         GameObject genCat = Instantiate(catPrefabs[i], genPosition, Quaternion.Euler(0.0f, 180.0f, 0.0f));
+        genCat.tag = "Cat";
+        genCat.transform.tag = "Cat";
         catSlot[n] = true;
         genCat.transform.SetParent(Map.transform);
     }
