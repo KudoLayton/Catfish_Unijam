@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Water
+  - Fluid
+  - GM
+  - Plane
+  - Cat
+  - Fish
   layers:
   - Default
   - TransparentFX
