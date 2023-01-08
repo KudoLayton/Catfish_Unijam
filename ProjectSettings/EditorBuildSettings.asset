@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewStage01.unity
     guid: 38e1f2f3876e2d849b0df747c2ffaf4e
+  - enabled: 1
+    path: Assets/Scenes/ChasingCatScene.unity
+    guid: 2941f5d7c426042a09d9589b4a6ed485
+  - enabled: 1
+    path: Assets/Scenes/ScoreboardScene.unity
+    guid: 29873fa17bfb546dcb3acb995f03494c
   m_configObjects: {}
