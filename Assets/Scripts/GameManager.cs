@@ -30,6 +30,15 @@ public class GameManager : MonoBehaviour
         GameStart();
     }
 
+    int StrToInt(string x) {
+        int outValue = 0;
+        for (int i = 0; i < x.Length; i++)
+        {
+            outValue = outValue * 10 + (x[i] - '0');
+        }       
+        return outValue;
+    }
+
 
     [System.Serializable]
     public struct FishType
@@ -91,13 +100,14 @@ public class GameManager : MonoBehaviour
 
     bool[] fishSlot = new bool[6];
     bool[] catSlot = new bool[6];
+    GameObject[] fishObjSlot = new GameObject[6];
     int score;
     
     long gameTick;
     long fishTick, catTick;
     long gameMaxTick;
     long fishMaxTick, catMaxTick;
-    int[] fishHuntCount;
+    Dictionary<string, int> fishHuntCount = new Dictionary<string, int>();
 
     // 0 ~ (size - 1) 사이의 난수열을 반환합니다. 1번씩 등장합니다.
     public int[] randomArray(int size)
@@ -119,6 +129,9 @@ public class GameManager : MonoBehaviour
     // 게임이 시작되면 호출할 메소드입니다.
     public void GameStart()
     {   
+        foreach (FishType ftype in currentGameSet.fishtypes) {
+            fishHuntCount[ftype.color] = 0;
+        }
         for (int i = 0; i < fishSlotNum; i++)
         {
             fishSlot[i] = false;
@@ -165,6 +178,7 @@ public class GameManager : MonoBehaviour
             {
                 addscore = fishtype.GetScore();
                 score += addscore;
+                fishHuntCount[fishColor] += 1;
                 break;
             }
         }
@@ -177,6 +191,7 @@ public class GameManager : MonoBehaviour
 
     public void DeleteFishSlot(int n) {
         fishSlot[n] = false;
+        fishObjSlot[n] = null;
     }
 
     public void DeleteCatSlot(int n) {
@@ -211,6 +226,7 @@ public class GameManager : MonoBehaviour
         genFish.GetComponent<FishBehavior>().GetComponent<Rigidbody>().isKinematic = true;
         fishSlot[n] = true;
         genFish.transform.SetParent(Map.transform);
+        fishObjSlot[n] = genFish;
     }
 
     
@@ -312,6 +328,43 @@ public class GameManager : MonoBehaviour
         }
         return -1;
     }
+
+    void Update()
+    {
+        Vector3 touchPosition = Vector3.zero;
+        bool input = false;
+#if UNITY_EDITOR
+        if (Input.GetMouseButton(0))
+        {
+            touchPosition = Input.mousePosition;
+            input = true;
+        }
+#else
+        if (Input.touchCount > 0)
+        {
+            touchPosition = Input.GetTouch(0).position;
+            input = true;
+        }
+#endif
+
+        if (input) {
+            RaycastHit hitSlot;
+            Ray ray = Camera.main.ScreenPointToRay(touchPosition);
+            
+            if (Physics.Raycast(ray, out hitSlot, Mathf.Infinity))
+            {
+                int slot = (int)(hitSlot.point.x + 4.5 * 5 / 9);
+                slot = (slot >= 6 ? 5 : (slot < 0 ? 0 : slot));
+                GameObject fish = fishObjSlot[slot];
+                fish.GetComponent<Rigidbody>().isKinematic = false;
+                DeleteFishSlot(slot);
+            }   
+        }
+        
+        
+    
+    }
+
 
     // Update
     void FixedUpdate()
