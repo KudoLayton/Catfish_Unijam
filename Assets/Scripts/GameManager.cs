@@ -191,6 +191,11 @@ public class GameManager : MonoBehaviour
         GameObject PopupManger = GameObject.FindGameObjectWithTag("CatPopup");
         PopupManger?.GetComponent<CatPopupManager>().ShowCatPopup(cat);
         GetComponent<AudioSource>().Play();
+        float x = cat.transform.position.x;
+        int slot = (int)((x + 4.5f) / 9.0f * 5.0f);
+        DeleteCatSlot(slot);
+        Destroy(cat);
+        Destroy(fish);
         // 고양이, 물고기 붙고
         // 애니메이션 : 날려버리기
         // 빈 자리에 짤방
