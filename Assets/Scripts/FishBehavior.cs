@@ -75,6 +75,7 @@ public class FishBehavior : MonoBehaviour
         _beforeExitVelocity = _rigidbody.velocity;
         _exitTime = Time.time;
         _isMarimoExiting = true;
+        GetComponent<AudioSource>()?.Play();
     }
 
     void OnTriggerStay(Collider triggerobj)
@@ -88,10 +89,14 @@ public class FishBehavior : MonoBehaviour
             Vector3 finalForce = fieldObject.GetComponent<ForceObject>().force * f / (radius * radius);
             gameObject.GetComponent<Rigidbody>().AddForce(finalForce);
         }
-        else if (triggerobj.tag == "Cat")
+    }
+    private void OnTriggerEnter(Collider triggerobj)
+    {
+        GameObject triggeredObj = triggerobj.transform.gameObject;
+        if (triggerobj.tag == "Cat")
         {
             GameObject fishObj = gameObject;
-            GameObject catObj = fieldObject;
+            GameObject catObj = triggeredObj;
             GameManager.Instance.CatchCat(fishObj, catObj);
         }
     }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7746926927962990571}
   - component: {fileID: 8989384868296976753}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: rendering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6727191148784157145}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6727079514876645345}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6726932671610046633}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6720930576698924385}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6720539593606530523}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6726825377286280197}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6727177842332349379}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6720497798314213395}
   - component: {fileID: 6682265063624904613}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6727077509156870807}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6726995546869028461}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6721039891670525925}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6720670014601979197}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6726987524572009823}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6720502505151060705}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,8 @@ GameObject:
   - component: {fileID: 8307060247289128384}
   - component: {fileID: 4939362721033641061}
   - component: {fileID: 2162830667284514577}
-  m_Layer: 6
+  - component: {fileID: 9038321355145866390}
+  m_Layer: 0
   m_Name: Fish_Blue
   m_TagString: Fish
   m_Icon: {fileID: 0}
@@ -664,6 +665,102 @@ MonoBehaviour:
   exitSpeed: 2
   exitDistance: 8
   exitTurnTime: 1
+--- !u!82 &9038321355145866390
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725913838714484655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8027a727c45f7431299dd246433949cb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6725973718362476831
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6726725521357334873}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +804,7 @@ GameObject:
   - component: {fileID: 6718590285359973997}
   - component: {fileID: 209652000217721092}
   - component: {fileID: 1420490647071752770}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}

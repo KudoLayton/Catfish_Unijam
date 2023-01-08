@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7579636791998598276}
   - component: {fileID: 1658309534103972854}
   - component: {fileID: 6345121403215510309}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054532345001919677}
   - component: {fileID: 1864589762972043815}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: rendering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063592997336786573}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063766021635898935}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4069621244999429119}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070000924928257207}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4069890529116365455}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063655640434459827}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070121176684885307}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070003025136794049}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4063634784038675269}
   - component: {fileID: 4151408192599239923}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4069938984300744853}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4069727254058432339}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063630056671246775}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070093981390927369}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4063498860027430507}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4069792067211315727}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,8 @@ GameObject:
   - component: {fileID: 1614668157513123478}
   - component: {fileID: 2426537860042587955}
   - component: {fileID: 8872940510760346695}
-  m_Layer: 6
+  - component: {fileID: -5134335696987304807}
+  m_Layer: 0
   m_Name: Fish_Red
   m_TagString: Fish
   m_Icon: {fileID: 0}
@@ -779,3 +780,99 @@ MonoBehaviour:
   exitSpeed: 2
   exitDistance: 8
   exitTurnTime: 1
+--- !u!82 &-5134335696987304807
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068949943710012665}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8027a727c45f7431299dd246433949cb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

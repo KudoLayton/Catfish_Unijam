@@ -15,6 +15,7 @@ public class SoundExcuter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Marimo enter!");
         OnTriggerEnterHandle.Invoke();
     }
 

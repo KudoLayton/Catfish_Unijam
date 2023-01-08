@@ -10,7 +10,7 @@ TagManager:
   - Plane
   - Cat
   - Fish
-  - Touch
+  - CatPopup
   layers:
   - Default
   - TransparentFX
@@ -18,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Fish
+  - 
   - 
   - 
   - 
